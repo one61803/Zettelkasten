@@ -7,7 +7,7 @@
 					; (describe-function 'link)
 
 (defun lk (name)
-  "Create an Org Mode link. This function should be run interactively, i.e., type option-X lk<RET>."
+  "Synonym of link. This function should be run interactively, i.e., type option-X lk<RET>."
   (interactive "sEnter filename: ")
   (insert (concat "[[./" name ".org][" name "]]"))
   )
@@ -35,7 +35,7 @@
 ; (describe-function 'el-link)
 
 (defun el-lk  (name)
-  "Create a link to an Emacs Lisp file. (An alternative is 'el-li'.)"
+  "Synonym of el-link. (An alternative is 'el-li'.)"
   (interactive "sEnter filename:")
   (insert (concat "[[./" name ".el][" name ".el]]"))
   )
