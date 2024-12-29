@@ -3,25 +3,36 @@
   "Date stamp."
   (interactive)
   (insert (format-time-string "%Y.%m.%d"))
-)
+  )
+; (describe-function 'datestamp)
 
 (defun Datestamp ()
   "Date stamp (using three letters for month)."
   (interactive)
   (insert (format-time-string "%Y.%h.%d"))
-)
+  )
+					; (describe-function 'Datestamp)
+
+(defun Datestamp-hyphen ()
+  "Date stamp (using three letters for month and using hyphen as separator instead of period)."
+  (interactive)
+  (insert (format-time-string "%Y-%h-%d"))
+  )
+; (describe-function 'Datestamp-hyphen)
 
 (defun timestamp ()
   "Time stamp."
   (interactive)
   (insert (format-time-string "%H:%M"))
-)
+  )
+; (describe-function 'timestamp)
 
 (defun tm ()
   "Synonym of timestamp."
   (interactive)
   (timestamp)
   )
+; (describe-function 'tm)
 
 (defun TM ()
   "Synonym of timestamp."
@@ -34,21 +45,42 @@
   "Synonym of datestamp."
   (interactive)
   (datestamp)
-)
+  )
+; (describe-function 'dt)
 
 (defun Dt ()
   "Synonym of Datestamp."
   (interactive)
   (Datestamp)
-)
+  )
+; (describe-function 'Dt)
 
 (defun dttm ()
-  "Timestamp followed by datestamp."
+  "datestamp followed by timestamp."
   (interactive)
   (datestamp)
   (insert " ")
   (timestamp)
   )
+					; (describe-function 'dttm)
+
+(defun Dttm ()
+  "Datestamp followed by timestamp."
+  (interactive)
+  (Datestamp)
+  (insert " ")
+  (timestamp)
+  )
+					; (describe-function 'Dttm)
+
+(defun Dttm-hyphen ()
+  "Datestamp-hyphen followed by timestamp."
+  (interactive)
+  (Datestamp-hyphen)
+  (insert " ")
+  (timestamp)
+  )
+; (describe-function 'Dttm-hyphen)
 
 (defun greco-latin ()
   "Time stamp which prints capital English letter for hour and lowercase Greek letter for pentaminute."
@@ -100,9 +132,11 @@
     (insert (concat hour-latin minute-greek))
   )
   )
+; (describe-function 'greco-latin)
 
 (defun latino-greek ()
   "Synonym of greco-latin."
   (interactive)
   (greco-latin)
-)
+  )
+; (describe-function 'latino-greek)
