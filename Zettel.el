@@ -24,7 +24,7 @@
 ; (describe-function 'org)
 
 (defun prop (n)
-  "Creates a PROPERTIES drawer (to qualify a given Zettel) with a number as CUSTOM_ID property. This function asks the user for a number, which is then assigned to the CUSTOM_ID property."
+  "Creates a PROPERTIES drawer (to qualify a given Zettel by being placed inside it) with a number as CUSTOM_ID property. This function asks the user for a number, which is then assigned to the CUSTOM_ID property."
   (interactive "nNumber?")
   (insert ":PROPERTIES:\n")
   (insert (concat ":CUSTOM_ID: " (number-to-string n) "\n"))
