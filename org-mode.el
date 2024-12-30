@@ -1,3 +1,4 @@
+(load-file "ASCII_coder.el")
 
 (defun link (name)
   "Create an Org Mode link."
