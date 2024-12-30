@@ -166,7 +166,7 @@
 ; (describe-function 'bra)
 
 (defun empty-checkbox ()
-  "Alias of ballot-box."
+  "Synonym of ballot-box."
   (interactive)
   (ballot-box)
   )
@@ -201,6 +201,7 @@
 ; (describe-function 'beta-dot)
 
 (defun black-bishop ()
+  "Inserts symbol for chess piece black bishop."
   (interactive)
   (insert "♝")
   )
@@ -333,14 +334,14 @@
 ; (describe-function 'check)
 
 (defun checked-box ()
-  "Alias for ballot-box-with-check."
+  "Synonym of ballot-box-with-check."
   (interactive)
   (ballot-box-with-check)
   )
 ; (describe-function 'checked-box)
 
 (defun checked-checkbox ()
-  "Alias of ballot-box-with-check."
+  "Synonym of ballot-box-with-check."
   (interactive)
   (ballot-box-with-check)
   )
@@ -395,7 +396,7 @@
 ; (describe-function 'clubs)
 
 (defun command-key ()
-  "Alias of looped-square."
+  "Synonym of looped-square."
   (interactive)
   (looped-square)
   )
@@ -571,7 +572,7 @@
 ; (describe-function 'emoji)
 
 (defun empty-box ()
-  "Alias of ballot-box."
+  "Synonym of ballot-box."
   (interactive)
   (ballot-box)
   )
@@ -753,7 +754,7 @@
 ; (describe-function 'index)
 
 (defun in-progress ()
-  "Inserts three point punctuation; used to indicate that a to-do item is in progress of being done."
+  "Inserts three point punctuation."
   (interactive)
   (insert "⁖")
   )
@@ -886,7 +887,7 @@
 					; (describe-function 'maps-to)
 
 (defun mdash ()
-  "Insert an mdash. Note: Option+Shift+hyphen = mdash."
+  "Insert an mdash. (Note: Option+Shift+hyphen = mdash.)"
   (interactive)
   (insert "—")
   )
@@ -928,7 +929,7 @@
 ; (describe-function 'n-dot)
 
 (defun ndash ()
-  "Insert an ndash. Note: Option+hyphen = ndash."
+  "Insert an ndash. (Note: Option+hyphen = ndash.)"
   (interactive)
   (insert "–")
   )
@@ -1140,7 +1141,7 @@
 ; (describe-function 'pinwheel-star)
 
 (defun place-of-interest-sign ()
-  "Alias of looped square symbol."
+  "Synonym of looped square symbol."
   (interactive)
   (looped-square)
   )
@@ -1296,7 +1297,7 @@
 ; (describe-function 'sigma)
 
 (defun smile ()
-  "Alias for undertie."
+  "Synonym of undertie."
   (interactive)
   (undertie)
   (message "undertie")
