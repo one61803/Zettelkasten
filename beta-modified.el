@@ -1,4 +1,4 @@
-; Beta Code (modified) implementation in Emacs Lisp (Modified)
+; Beta Code (modified) implementation in Emacs Lisp
 ; To apply: type: M-x beta-1 <return>
 ; Or: type: M-x b-1 <return>
 ; Then type the (Modified) Beta Code for an Ancient Greek word or phrase, then press <return> again.
