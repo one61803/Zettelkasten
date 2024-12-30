@@ -56,7 +56,6 @@
 	)
 	((string= ch "b") "β")
 	((string= ch "q") "ψ")
-	;((string= ch "4") "ψ")
 	((string= ch "d") "δ")
 	((string= ch "e")
 	    (cond
@@ -125,9 +124,7 @@
 	    )
         )
 	((string= ch "x") "ξ")
-	;((string= ch "3") "ξ")
 	((string= ch "5") "ς")
-	;((string= ch "j") "ς")   ;?
 	((string= ch "k") "κ")
 	((string= ch "l") "λ")
 	((string= ch "m") "μ")
@@ -277,7 +274,6 @@
 	    )
         )
 	((string= ch "X") "Ξ")
-	;((string= ch "#") "Ξ")
 	((string= ch "K") "Κ")
 	((string= ch "L") "Λ")
 	((string= ch "M") "Μ")
@@ -303,7 +299,6 @@
 	((string= ch "S") "Σ")
 	((string= ch "T") "Τ")
 	((string= ch "C") "Θ")
-	;((string= ch "*") "Θ")
 	((string= ch "W")
 	    (cond
 	        ((and (eq breath 0) (eq accent 0)) "Ω")
@@ -320,7 +315,6 @@
 		((and (eq breath 2) (eq accent 3)) "Ὧ")
 	    )
         )
-	;((string= ch "W") "΅")
 	((string= ch "X") "Χ")
         ((string= ch "U")
 	    (cond
