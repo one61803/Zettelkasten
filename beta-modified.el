@@ -7,6 +7,12 @@
 ; ABCDEFGHIJKLMNOPQRS5TUWXZ
 ; αβθδεφγηιχκλμνοπψρσςτυωξζ
 
+; Notes: In Peninsular Spanish, "c" before "e" or "i" is pronounced like Greek theta (or English unvoiced "th"), hence the assignment here of C to θ.
+; Likewise, in Spanish, "j" is pronounced like Greek chi, hence the assignment here of J to χ.
+; Q is assigned to ψ purely due to a partial similarity in shape (regardless of their sounds).
+; 5 is assigned to final sigma (ς) due to similarity in shape.
+; h is assigned to η due to some similarity in shape, and also because capital Latin H looks the same as capital Greek H.
+
 
 ; global variables
 (setq iotasub 0)
