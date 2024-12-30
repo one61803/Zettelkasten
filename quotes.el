@@ -36,7 +36,7 @@
 ; (describe-function 'quotes)
 
 (defun quotes-2 ()
-  "Synonym of quotes. (Shortcut: qu-2.)"
+  "Synonym of quotes. (Shortcut: q-2.)"
   (interactive)
   (open-double-quote)
   (close-double-quote)
@@ -44,7 +44,7 @@
 					; (describe-function 'quotes-2)
 
 (defun double-quotes ()
-  "Synonym of quotes."
+  "Synonym of quotes. (Shortcut: do-q.)"
   (interactive)
   (open-double-quote)
   (close-double-quote)
@@ -60,7 +60,7 @@
 ; (describe-function 'double-quotes-DA)
 
 (defun quotes-1 ()
-  "Inserts single opening and closing quotation marks without a space or anything else between them. (E.g., for placing the cursor between them and typing something in.) (Shortcut: qu-1.)"
+  "Inserts single opening and closing quotation marks without a space or anything else between them. (E.g., for placing the cursor between them and typing something in.) (Shortcut: q-1.)"
   (interactive)
   (open-single-quote)
   (close-single-quote)
@@ -68,7 +68,7 @@
 					; (describe-function 'quotes-1)
 
 (defun single-quotes ()
-  "Synonym of quotes-1."
+  "Synonym of quotes-1. (Shortcut: si-q.)"
   (interactive)
   (open-single-quote)
   (close-single-quote)
@@ -90,7 +90,7 @@
 ; (describe-function 'APOSTROPHE)
 
 (defun quotes-3 ()
-  "Like quotes-2 but for Spanish or French."
+  "Like quotes-2 but for Spanish or French. (Shortcut: q-3.)"
   (interactive)
   (insert "«»")
   )
