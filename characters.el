@@ -859,9 +859,9 @@
 ; (describe-function 'left-arrow)
 
 (defun left-right-arrow ()
-  "Inserts a double-headed arrow."
+  "Inserts a double-headed arrow. (Shortcut: l-r-a.)"
   (interactive)
-  (insert "↔")
+  (insert "←→")
   )
 ; (describe-function 'left-right-arrow)
 
