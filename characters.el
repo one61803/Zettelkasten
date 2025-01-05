@@ -858,6 +858,13 @@
   )
 ; (describe-function 'left-arrow)
 
+(defun left-right-arrow ()
+  "Inserts a double-headed arrow."
+  (interactive)
+  (insert "↔")
+  )
+; (describe-function 'left-right-arrow)
+
 (defun ll ()
   "Inserts ’ll."
   (interactive)
