@@ -837,6 +837,13 @@
   )
 ; (describe-function 'lambda-0)
 
+(defun Lambda ()
+  "Inserts an uppercase Greek letter lambda."
+  (interactive)
+  (insert "Λ")
+)
+; (describe-function 'Lambda)
+
 (defun langle ()
   "Inserts left angle bracket, a.k.a bra."
   (interactive)
