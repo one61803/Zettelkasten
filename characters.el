@@ -166,7 +166,7 @@
 ; (describe-function 'bra)
 
 (defun empty-checkbox ()
-  "Synonym of ballot-box."
+  "Alias of ballot-box."
   (interactive)
   (ballot-box)
   )
@@ -201,7 +201,6 @@
 ; (describe-function 'beta-dot)
 
 (defun black-bishop ()
-  "Inserts symbol for chess piece black bishop."
   (interactive)
   (insert "♝")
   )
@@ -334,14 +333,14 @@
 ; (describe-function 'check)
 
 (defun checked-box ()
-  "Synonym of ballot-box-with-check."
+  "Alias for ballot-box-with-check."
   (interactive)
   (ballot-box-with-check)
   )
 ; (describe-function 'checked-box)
 
 (defun checked-checkbox ()
-  "Synonym of ballot-box-with-check."
+  "Alias of ballot-box-with-check."
   (interactive)
   (ballot-box-with-check)
   )
@@ -396,7 +395,7 @@
 ; (describe-function 'clubs)
 
 (defun command-key ()
-  "Synonym of looped-square."
+  "Alias of looped-square."
   (interactive)
   (looped-square)
   )
@@ -494,7 +493,7 @@
 ; (describe-function 'delta)
 
 (defun dh ()
-  "For Icelandic: inserts a lowercase letter corresponding to English digraph 'th' (voiced)."
+  "For Icelandic: inserts a lowercase letter corresponding to English digraph 'th' (voiced). (Synonym of eth.)"
   (interactive)
   (insert "ð")
   )
@@ -572,7 +571,7 @@
 ; (describe-function 'emoji)
 
 (defun empty-box ()
-  "Synonym of ballot-box."
+  "Alias of ballot-box."
   (interactive)
   (ballot-box)
   )
@@ -591,6 +590,13 @@
   (insert "∎")
   )
 ; (describe-function 'end-of-proof)
+
+(defun eng ()
+  "Inserts an IPA letter eng."
+  (interactive)
+  (insert "ŋ")
+  )
+; (describe-function 'eng)
 
 (defun envelope ()
   "Inserts a text-style envelope symbol: U+2709, &#9993."
@@ -613,12 +619,28 @@
   )
 ; (describe-function 'equivalent-to)
 
+(defun esh ()
+  "Inserts IPA letter esh."
+  (interactive)
+  (insert "ʃ")
+  )
+; (describe-function 'esh)
+
 (defun eta ()
   "Inserts Greek lowercase letter eta."
   (interactive)
   (insert "η")
 )
-; (describe-function 'eta)
+					; (describe-function 'eta)
+
+(defun eth ()
+  "Inserts IPA letter eth. (Synonym of dh.)"
+  (interactive)
+  (insert "ð")
+  )
+; (describe-function 'eth)
+; (string= "ð" "ð") => t
+
 
 (defun euros ()
   "Inserts monetary symbol euro."
@@ -627,6 +649,13 @@
   )
 ; (describe-function 'euros)
 
+(defun ezh ()
+  "Inserts IPA letter ezh."
+  (interactive)
+  (insert "ʒ")
+  )
+; (describe-function 'ezh)
+  
 (defun gamma ()
   "Inserts Greek lowercase letter gamma."
   (interactive)
@@ -648,12 +677,13 @@
 )
 					; (describe-function 'GENITIVE)
 
-(defun gte ()
-  "Inserts mathematical greater-than-or-equal-to sign."
+(defun GTE ()
+  "Inserts mathematical is-Greater-Than-or-Equal-to sign."
   (interactive)
-  (insert "≧")
+  (insert "≥")
 )
-; (describe-function 'gte)
+					; (describe-function 'GTE)
+  
 
 (defun h-bar ()
   "For physics: reduced Planck’s constant."
@@ -754,7 +784,7 @@
 ; (describe-function 'index)
 
 (defun in-progress ()
-  "Inserts three point punctuation."
+  "Inserts three point punctuation; used to indicate that a to-do item is in progress of being done."
   (interactive)
   (insert "⁖")
   )
@@ -835,7 +865,7 @@
   (interactive)
   (insert "λ")
   )
-; (describe-function 'lambda-0)
+					; (describe-function 'lambda-0)
 
 (defun Lambda ()
   "Inserts an uppercase Greek letter lambda."
@@ -891,7 +921,14 @@
   (interactive)
   (insert "⌘")
   )
-; (describe-function 'looped-square)
+					; (describe-function 'looped-square)
+
+(defun LTE ()
+  "Inserts the mathematical is-Less-Than-or-Equal-to sign."
+  (interactive)
+  (insert "≤")
+)
+; (describe-function 'LTE)
 
 (defun maps-to ()
   "Inserts mathematical/set-theoretical maps-to symbol. Note: if y = f(x), then f: x ↦ y."
@@ -901,7 +938,7 @@
 					; (describe-function 'maps-to)
 
 (defun mdash ()
-  "Insert an mdash. (Note: Option+Shift+hyphen = mdash.)"
+  "Insert an mdash. Note: Option+Shift+hyphen = mdash."
   (interactive)
   (insert "—")
   )
@@ -943,7 +980,7 @@
 ; (describe-function 'n-dot)
 
 (defun ndash ()
-  "Insert an ndash. (Note: Option+hyphen = ndash.)"
+  "Insert an ndash. Note: Option+hyphen = ndash."
   (interactive)
   (insert "–")
   )
@@ -1075,6 +1112,13 @@
   )
 ; (describe-function 'open-center-black-star)
 
+(defun open-exclamation ()
+  "For Spanish: inserts the inverted exclamation mark."
+  (interactive)
+  (insert "¡")
+  )
+; (describe-function 'open-exclamation)
+
 (defun open-question ()
   "For Spanish: inserts the opening question mark."
   (interactive)
@@ -1155,7 +1199,7 @@
 ; (describe-function 'pinwheel-star)
 
 (defun place-of-interest-sign ()
-  "Synonym of looped square symbol."
+  "Alias of looped square symbol."
   (interactive)
   (looped-square)
   )
@@ -1311,7 +1355,7 @@
 ; (describe-function 'sigma)
 
 (defun smile ()
-  "Synonym of undertie."
+  "Alias for undertie."
   (interactive)
   (undertie)
   (message "undertie")
@@ -1612,7 +1656,14 @@
   (interactive)
   (insert "↑")
   )
-; (describe-function 'up-arrow)
+					; (describe-function 'up-arrow)
+
+(defun upside-down-exclamation-mark ()
+  "For Spanish: inserts an inverted exclamation mark."
+  (interactive)
+  (insert "¡")
+  )
+; (describe-function 'upside-down-exclamation-mark)
 
 (defun uu ()
   "Synonym of u-macron."
