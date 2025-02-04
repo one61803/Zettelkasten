@@ -993,16 +993,16 @@
 ; (describe-function 'nona)
 
 (defun not0 ()
-  "Inserts apostrophe t."
+  "Inserts 'n apostrophe t'."
   (interactive)
-  (insert "’t")
+  (insert "n’t")
   )
 ; (describe-function 'not0)
 
 (defun nott ()
-  "Inserts apostrophe t."
+  "Inserts 'n apostrophe t'."
   (interactive)
-  (insert "’t")
+  (insert "n’t")
   )
 ; (describe-function 'nott)
 
