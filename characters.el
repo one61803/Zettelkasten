@@ -990,17 +990,25 @@
   (interactive)
   (insert "⁹")
   )
-; (describe-function 'nona)
+					; (describe-function 'nona)
+
+(defun n0t ()
+  "Inserts 'n apostrophe t'. (Synonym of nott and not0.)"
+  (interactive)
+  (insert "n’t")
+  )
+; (describe-function 'n0t)
+
 
 (defun not0 ()
-  "Inserts 'n apostrophe t'. (Synonym of nott.)"
+  "Inserts 'n apostrophe t'. (Synonym of nott and n0t.)"
   (interactive)
   (insert "n’t")
   )
 ; (describe-function 'not0)
 
 (defun nott ()
-  "Inserts 'n apostrophe t'. (Synonym of not0.)"
+  "Inserts 'n apostrophe t'. (Synonym of not0 and n0t.)"
   (interactive)
   (insert "n’t")
   )
