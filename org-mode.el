@@ -22,9 +22,23 @@
 ; (describe-function 'ASCII-link)
 
 (defun ASCII-lk (name)
-  "Synonym of ASCII-link. (An alternative is 'ASC-li'.)"
+  "Synonym of ASCII-link. (An abbreviation is 'AS-li'.)"
   (interactive "sEnter filename:")
   (insert (concat "[[./" (ASCII-trans-0 name) ".org][" (ASCII-trans-0 name) "]]"))
+  )
+; (describe-function 'ASCII-lk)
+
+(defun ASCII-link-2 (name)
+  "Like ASCII-link but leaving spaces as they are (unencoded)."
+  (interactive "sEnter filename:")
+  (insert (concat "[[./" (ASCII-trans-2-0 name) ".org][" (ASCII-trans-2-0 name) "]]"))
+  )
+; (describe-function 'ASCII-link)
+
+(defun ASCII-lk-2 (name)
+  "Synonym of ASCII-link-2. (An abbreviation is 'AS-li-2'.)"
+  (interactive "sEnter filename:")
+  (insert (concat "[[./" (ASCII-trans-2-0 name) ".org][" (ASCII-trans-2-0 name) "]]"))
   )
 ; (describe-function 'ASCII-lk)
 
@@ -36,7 +50,7 @@
 ; (describe-function 'el-link)
 
 (defun el-lk  (name)
-  "Synonym of el-link. (An alternative is 'el-li'.)"
+  "Synonym of el-link. (An abbreviation is 'el-li'.)"
   (interactive "sEnter filename:")
   (insert (concat "[[./" name ".el][" name ".el]]"))
   )
