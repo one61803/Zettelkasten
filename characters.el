@@ -1402,8 +1402,14 @@
   (interactive)
   (insert "’s")
   )
-
 ; (describe-function 'ss)
+
+(defun SS ()
+  "Inserts apostrophe S."
+  (interactive)
+  (insert "’S")
+  )
+; (describe-function 'SS)
 
 (defun sub-0 ()
   "Insert subscripted 0."
