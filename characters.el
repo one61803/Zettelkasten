@@ -386,7 +386,14 @@
   (interactive)
   (insert "✪")
   )
-; (describe-function 'circled-white-star)
+					; (describe-function 'circled-white-star)
+
+(defun close-paragraph ()
+  "Inserts a reversed pilcrow sign character. (Synonym of reversed-pilcrow.)"
+  (interactive)
+  (insert "⁋")
+  )
+; (describe-function 'close-paragraph)
 
 (defun clubs ()
   "Inserts symbol for suit of clubs (used with playing cards)."
@@ -1133,6 +1140,13 @@
   )
 ; (describe-function 'open-exclamation)
 
+(defun open-paragraph ()
+  "Inserts a pilcrow character. (Synonym of pilcrow.)"
+  (interactive)
+  (insert "¶")
+  )
+; (describe-function 'pilcrow)
+
 (defun open-question ()
   "For Spanish: inserts the opening question mark."
   (interactive)
@@ -1282,7 +1296,14 @@
   (interactive)
   (insert "¡")
   )
-; (describe-function 'reverse-exclamation-mark)
+					; (describe-function 'reverse-exclamation-mark)
+
+(defun reversed-pilcrow ()
+  "Inserts a reversed pilcrow character. (Synonym of close-paragraph.)"
+  (interactive)
+  (insert "⁋")
+  )
+; (describe-function 'reversed-pilcrow)
 
 (defun right-angle-bracket ()
   "Inserts a right angle bracket, a.k.a. ket."
