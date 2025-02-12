@@ -775,6 +775,13 @@
   )
 					; (describe-function 'in)
 
+(defun inches ()
+  "Inserts a '”'."
+  (interactive)
+  (insert "”")
+  )
+; (describe-function 'inches)
+  
 (defun index ()
   "Insert character of hand pointing its index finger towards the right."
   (interactive)
@@ -1402,7 +1409,7 @@
   (interactive)
   (insert "’s")
   )
-; (describe-function 'ss)
+					; (describe-function 'ss)
 
 (defun SS ()
   "Inserts apostrophe S."
