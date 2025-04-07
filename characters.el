@@ -71,33 +71,18 @@
   )
 ; (describe-function 'AE)
 
+(defun alembic ()
+  "Inserts ALEMBIC character."
+  (interactive)
+  (insert "⚗"))
+; (describe-function 'alembic)
+
 (defun almost-equal-to ()
   "For mathematics: inserts the symbol for ALMOST EQUAL TO or 'approximately equal to'."
   (interactive)
   (insert "≈")
   )
 ; (describe-function 'almost-equal-to)
-
-(defun alpha ()
-  "Inserts a lowercase Greek letter alpha."
-  (interactive)
-  (insert "α")
-  )
-					; (describe-function 'alpha)
-
-(defun alpha-tilde ()
-  "Inserts a lowercase Greek letter alpha with perispomeni."
-  (interactive)
-  (insert "ᾶ")
-  )
-; (describe-function 'alpha-tilde)
-
-(defun alpha-dot ()
-  "Inserts alpha prime."
-  (interactive)
-  (insert "α΄")
-)
-					; (describe-function 'alpha-dot)
 
 (defun am1 ()
   "Inserts apostrophe m."
@@ -185,20 +170,6 @@
   (insert "☒")
   )
 ; (describe-function 'ballot-box-with-x)
-
-(defun beta ()
-  "Inserts lowercase Greek letter beta."
-  (interactive)
-  (insert "β")
-  )
-					; (describe-function 'beta)
-
-(defun beta-dot ()
-  "Inserts primed beta."
-  (interactive)
-  (insert "β΄")
-)
-; (describe-function 'beta-dot)
 
 (defun black-bishop ()
   "Inserts symbol for chess piece black bishop."
@@ -306,7 +277,7 @@
 ; (describe-function 'c-hacek)
 
 (defun cap ()
-  "Inserts set-theoretical symbol for intersection."
+  "Inserts set-theoretical symbol for intersection. (synonym: intersection)"
   (interactive)
   (insert "∩")
   )
@@ -347,26 +318,25 @@
   )
 ; (describe-function 'checked-checkbox)
 
-(defun chi ()
-  "Inserts lowercase Greek letter chi."
-  (interactive)
-  (insert "χ")
-  )
-					; (describe-function 'chi)
-
 (defun chmk ()
-  "Prints a checkmark."
+  "Prints a checkmark. (synonyms: DONE, square-root, radix)"
   (interactive)
   (insert "√")
   )
 ; (describe-function 'chmk)
 
 (defun circle-C ()
-  "Inserts trade or legal symbol for copyright."
+  "Inserts trade or legal symbol for copyright. (synonym: CIRCLE-C)"
   (interactive)
   (insert "©")
   )
-; (describe-function 'circle-C)
+					; (describe-function 'circle-C)
+
+(defun CIRCLE-C ()
+  "Inserts trade or legal symbol for copyright. (synonym: circle-C)"
+  (interactive)
+  (insert "©"))
+; (describe-function 'CIRCLE-C)
 
 (defun circle-R ()
   "Inserts trade or legal symbol for registered."
@@ -408,6 +378,13 @@
   (looped-square)
   )
 ; (describe-function 'command-key)
+
+(defun complement ()
+  "Inserts the set-theoretic symbol for complement."
+  (interactive)
+  (insert "∁")
+  )
+; (describe-function 'complement)
 
 (defun congruent-to ()
   "Inserts geometrical symbol of congruence."
@@ -452,7 +429,7 @@
 ; (describe-function 'cubed)
 
 (defun cup ()
-  "Inserts set-theoretic symbol of union."
+  "Inserts set-theoretic symbol of union. (synonym: union)"
   (interactive)
   (insert "∪")
   )
@@ -466,11 +443,17 @@
 ; (describe-function 'd-dot)
 
 (defun dagger ()
-  "Inserts a dagger symbol (useful for footnoting.)"
+  "Inserts a dagger symbol (useful for footnoting) (synonym: DAGGER)"
   (interactive)
   (insert "†")
   )
-; (describe-function 'dagger)
+					; (describe-function 'dagger)
+
+(defun DAGGER ()
+  "Inserts a dagger symbol (useful for footnoting). (synonym: dagger)"
+  (interactive)
+  (insert "†"))
+; (describe-function 'DAGGER)
 
 (defun dd ()
   "Inserts ’d."
@@ -485,20 +468,6 @@
   (insert "°")
   )
 ; (describe-function 'degrees)
-
-(defun Delta ()
-  "Inserts an uppercase Greek letter Delta."
-  (interactive)
-  (insert "Δ")
-  )
-; (describe-function 'Delta)
-
-(defun delta ()
-  "Inserts a lowercase Greek letter delta."
-  (interactive)
-  (insert "δ")
-  )
-; (describe-function 'delta)
 
 (defun dh ()
   "For Icelandic: inserts a lowercase letter corresponding to English digraph 'th' (voiced). (Synonym of eth.)"
@@ -522,9 +491,9 @@
 					; (describe-function 'diamonds)
 
 (defun DONE ()
-  "Prints a checkmark."
+  "Prints a checkmark. (synonyms: chmk, square-root, radix)"
   (interactive)
-  (chmk)
+  (insert "√")
   )
 					; (describe-function 'DONE)
 
@@ -537,11 +506,17 @@
 ; (describe-function 'DONE-tm)
 
 (defun double-dagger ()
-  "Inserts symbol DOUBLE DAGGER (useful for footnoting)."
+  "Inserts symbol DOUBLE DAGGER (useful for footnoting). (synonym: DOUBLE-DAGGER)"
   (interactive)
   (insert "‡")
   )
 ; (describe-function 'double-dagger)
+
+(defun DOUBLE-DAGGER ()
+  "Inserts symbol DOUBLE DAGGER (useful for footnoting). (synonym: double-dagger)"
+  (interactive)
+  (insert "‡"))
+; (describe-function 'DOUBLE-DAGGER)
 
 (defun down-arrow ()
   "Inserts a downward-pointing arrow."
@@ -572,9 +547,9 @@
 ; (describe-function 'ellipsis)
 
 (defun emoji ()
-  "Inserts a placeholder for an emoji."
+  "Inserts a placeholder for an emoji: circled ‘e’."
   (interactive)
-  (insert "[•]")
+  (insert "ⓔ")
   )
 ; (describe-function 'emoji)
 
@@ -613,13 +588,6 @@
   )
 ; (describe-function 'envelope)
 
-(defun epsilon ()
-  "Inserts Greek lower case letter epsilon."
-  (interactive)
-  (insert "ε")
-  )
-; (describe-function 'epsilon)
-
 (defun equivalent-to ()
   "Inserts mathematical equivalence symbol."
   (interactive)
@@ -633,13 +601,6 @@
   (insert "ʃ")
   )
 ; (describe-function 'esh)
-
-(defun eta ()
-  "Inserts Greek lowercase letter eta."
-  (interactive)
-  (insert "η")
-)
-					; (describe-function 'eta)
 
 (defun eth ()
   "Inserts IPA letter eth. (Synonym of dh.)"
@@ -661,13 +622,6 @@
   (insert "ʒ")
   )
 ; (describe-function 'ezh)
-  
-(defun gamma ()
-  "Inserts Greek lowercase letter gamma."
-  (interactive)
-  (insert "γ")
-  )
-; (describe-function 'gamma)
 
 (defun genitive ()
   "Inserts apostrophe s."
@@ -689,7 +643,6 @@
   (insert "≥")
 )
 					; (describe-function 'GTE)
-  
 
 (defun h-bar ()
   "For physics: reduced Planck’s constant."
@@ -740,6 +693,12 @@
   )
 					; (describe-function 'hexa)
 
+(defun icon ()
+  "Inserts a placeholder for an icon: circled ‘i’."
+  (interactive)
+  (insert "ⓘ"))
+; (describe-function 'icon)
+
 (defun ii ()
   "Synonym of i-macron."
   (interactive)
@@ -753,13 +712,6 @@
   (insert "ī")
   )
 ; (describe-function "i-macron")
-
-(defun ID1 ()
-  "Pictograph of an ID card. Well, it’s not perfect as such, but... (It should be a rectangle with a smaller square off to one side.)"
-  (interactive)
-  (insert "▣")
-  )
-; (describe-function 'ID1)
 
 (defun identical-to ()
   "Inserts mathematical equivalence symbol. When two sides of an equation are equivalent to each other, i.e., equal for any value of their variable(s), then this symbol is applicable."
@@ -776,7 +728,7 @@
 ; (describe-function 'iff)
 
 (defun in ()
-  "Inserts set-theoretical is-a-member-of symbol."
+  "Inserts set-theoretical is-a-member-of symbol. (synonym: is-in)"
   (interactive)
   (insert "∈")
   )
@@ -815,7 +767,14 @@
     (interactive)
     (insert "·")
     )
-; (describe-function 'interpunct)
+					; (describe-function 'interpunct)
+
+(defun intersection ()
+  "Inserts the set-theoretic symbol for intersection. (synonym: cap)"
+  (interactive)
+  (insert "∩")
+  )
+; (describe-function 'intersection)
 
 (defun inverted-exclamation-mark ()
   "For Spanish: inserts the inverted exclamation mark (U+00BF)."
@@ -831,12 +790,18 @@
   )
 ; (describe-function 'inverted-question-mark)
 
-(defun iota ()
-  "Inserts lowercase Greek letter iota."
+(defun is-in ()
+  "Inserts set-theoretical is-a-member-of symbol. (synonym: in)"
   (interactive)
-  (insert "ι")
-)	 
-; (describe-function 'iota)
+  (insert "∈")
+  )
+					; (describe-function 'is-in)
+
+(defun is-not-in ()
+  "Inserts set-theoretical is-not-a-member-of symbol."
+  (interactive)
+  (insert "∉"))
+; (describe-function 'is-not-in)
 
 (defun isomorphic-to ()
   "Inserts abstract-algebraic isomorphism symbol."
@@ -852,40 +817,12 @@
   )
 ; (describe-function 'iss)
 
-(defun kappa ()
-  "Inserts lowercase Greek letter kappa."
-  (interactive)
-  (insert "κ")
-  )
-; (describe-function 'kappa)
-
 (defun ket ()
   "Inserts ket symbol. Synonym of rangle and right-angle-bracket."
   (interactive)
   (insert "⟩")
   )
 ; (describe-function 'ket)
-
-(defun key ()
-  "Inserts ASCII-art pictograph of a key."
-  (interactive)
-  (insert "O┐┐")
-  )
-; (describe-function 'key)
-
-(defun lambda-0 ()
-  "Inserts lowercase Greek letter lambda."
-  (interactive)
-  (insert "λ")
-  )
-					; (describe-function 'lambda-0)
-
-(defun Lambda ()
-  "Inserts an uppercase Greek letter lambda."
-  (interactive)
-  (insert "Λ")
-)
-; (describe-function 'Lambda)
 
 (defun langle ()
   "Inserts left angle bracket, a.k.a bra."
@@ -909,11 +846,17 @@
 ; (describe-function 'left-arrow)
 
 (defun left-right-arrow ()
-  "Inserts a double-headed arrow. (Shortcut: l-r-a.)"
+  "Inserts a double-headed arrow. (shortcut: l-r-a)"
   (interactive)
   (insert "←→")
   )
 ; (describe-function 'left-right-arrow)
+
+(defun leftwards-arrowbox ()
+  "Inserts a LEFTWARDS BLACK ARROW character. (shortcut: leftw)"
+  (interactive)
+  (insert "⬅"))
+; (describe-function 'leftwards-arrowbox)
 
 (defun ll ()
   "Inserts ’ll."
@@ -964,6 +907,12 @@
   )
 					; (describe-function 'minus)
 
+(defun minutes ()
+  "Inserts a '’' character, used to denote the word “minutes”."
+  (interactive)
+  (insert "’"))
+; (describe-function 'minutes)
+
 (defun mm ()
   "Inserts apostrophe m."
   (interactive)
@@ -977,13 +926,6 @@
   (insert "¹")
   )
 ; (describe-function 'mona)
-
-(defun mu ()
-  "Inserts lowercase Greek letter mu."
-  (interactive)
-  (insert "μ")
-  )
-; (describe-function 'mu)
 
 (defun n-dot ()
   "For transcribed Sanskrit: inserts n with dot under it."
@@ -999,6 +941,24 @@
   )
 ; (describe-function 'ndash)
 
+(defun n3wline ()
+  "Insert symbol of newline. (synonym: new-line, NewLine)"
+  (interactive)
+  (insert "␤"))
+; (describe-function 'n3wline)
+
+(defun new-line ()
+  "Insert symbol of newline. (synonym: n3wline, NewLine)"
+  (interactive)
+  (insert "␤"))
+; (describe-function 'new-line)
+
+(defun NewLine ()
+  "Insert symbol of newline. (synonyms: n3wline, new-line)"
+  (interactive)
+  (insert "␤"))
+; (describe-function 'NewLine)
+
 (defun nona ()
   "Inserts superscripted 9."
   (interactive)
@@ -1007,26 +967,13 @@
 					; (describe-function 'nona)
 
 (defun n0t ()
-  "Inserts 'n apostrophe t'. (Synonym of nott and not0.)"
+  "Inserts 'n apostrophe t'."
   (interactive)
   (insert "n’t")
   )
-; (describe-function 'n0t)
+					; (describe-function 'n0t)
+					; (describe-function 'not)
 
-
-(defun not0 ()
-  "Inserts 'n apostrophe t'. (Synonym of nott and n0t.)"
-  (interactive)
-  (insert "n’t")
-  )
-; (describe-function 'not0)
-
-(defun nott ()
-  "Inserts 'n apostrophe t'. (Synonym of not0 and n0t.)"
-  (interactive)
-  (insert "n’t")
-  )
-; (describe-function 'nott)
 
 (defun not-equals ()
   "Inserts mathematical not-equals sign."
@@ -1034,13 +981,6 @@
   (insert "≠")
   )
 ; (describe-function 'not-equals)
-
-(defun nu ()
-  "Inserts lowercase Greek letter nu."
-  (interactive)
-  (insert "ν")
-  )
-; (describe-function 'nu)
 
 (defun nulla ()
   "Inserts superscripted 0."
@@ -1050,18 +990,25 @@
 ; (describe-function 'nulla)
 
 (defun o-acute-acute ()
-  "Inserts Hungarian long o-umlaut."
+  "Inserts Hungarian long o-umlaut. (Synonyms: o-double-acute, o11.)"
   (interactive)
   (insert "ő")
   )
 ; (describe-function 'o-acute-acute)
 
 (defun o-double-acute ()
-  "Inserts Hungarian long o-umlaut."
+  "Inserts Hungarian long o-umlaut. (Synonyms: o-acute-acute, o11.)"
   (interactive)
   (insert "ő")
   )
-; (describe-function 'o-double-acute)
+					; (describe-function 'o-double-acute)
+
+(defun o11 ()
+  "Inserts Hungarian long o-umlaut. (Synonyms: o-acute-acute, o-double-acute.)"
+  (interactive)
+  (insert "ő")
+  )
+; (describe-function 'o11)
   
 (defun octa ()
   "Inserts superscripted eight."
@@ -1090,13 +1037,6 @@
   (insert "ø")
   )
 ; (describe-function 'o0)
-
-(defun omega ()
-  "Inserts lowercase Greek letter omega."
-  (interactive)
-  (insert "ω")
-  )
-; (describe-function 'omega)
 
 (defun one-eighth ()
   "Inserts fraction one-eighth."
@@ -1161,6 +1101,12 @@
   )
 ; (describe-function 'option-key)
 
+(defun paragraph-sign ()
+  "Inserts CURVED STEM PARAGRAPH SIGN ORNAMENT character. (shortcut: par-s)"
+  (interactive)
+  (insert "❡"))
+; (describe-function 'paragraph-sign)
+
 (defun parallel ()
   "Inserts the geometrical symbol for parallel lines."
   (interactive)
@@ -1182,42 +1128,12 @@
   )
 ; (describe-function 'penta)
 
-(defun Phi ()
-  "Inserts an uppercase Greek letter Phi."
-  (interactive)
-  (insert "Φ")
-  )
-; (describe-function 'Phi)
-
-(defun phi ()
-  "Inserts a lowercase Greek letter phi."
-  (interactive)
-  (insert "ϕ")
-  )
-; (describe-function 'phi)
-
 (defun pilcrow ()
   "Inserts a PILCROW SIGN."
   (interactive)
   (insert "¶")
   )
 ; (describe-function 'pilcrow)
-
-(defun pi ()
-  "Inserts a lowercase Greek letter pi. 'pi' is also the name of a numerical variable with the value of the geometrical constant."
-  (interactive)
-  (insert "π")
-  )
-					; (describe-function 'pi)
-
-(defun Pi ()
-  "Inserts an uppercase Greek letter pi."
-  (interactive)
-  (insert "Π")
-  )
-; (describe-function 'Pi)
-
-; pi => 3.141592653589793
 
 (defun pinwheel-star ()
   "Insert symbol PINWHEEL STAR."
@@ -1261,19 +1177,11 @@
   )
 ; (describe-function 'prime)
 
-(defun psi ()
-  "Inserts lowercase Greek letter psi."
+(defun radix ()
+  "Inserts a square-root sign. (synonyms: chmk, DONE, square-root)"
   (interactive)
-  (insert "ψ")
-  )
-; (describe-function 'psi)
-
-(defun Psi ()
-  "Inserts uppercase Greek letter Psi."
-  (interactive)
-  (insert "Ψ")
-  )
-; (describe-function 'Psi)
+  (insert "√")
+)
 
 (defun rangle ()
   "Inserts a right angle bracket, a.k.a. ket."
@@ -1291,29 +1199,36 @@
   )
 ; (describe-function 'reply)
 
+(defun reverse-comma ()
+  "Example: Maʽat. (Abbreviation: rev-com.)"
+  (interactive)
+  (insert "ʽ")
+  )
+; (describe-function 'reverse-comma)
+
 (defun reverse-exclamation-mark ()
-  "For Spanish: inserts opening/reverse exclamation mark."
+  "For Spanish: inserts opening/reverse exclamation mark. (Abbreviation: r-ex.)"
   (interactive)
   (insert "¡")
   )
 					; (describe-function 'reverse-exclamation-mark)
 
 (defun reversed-pilcrow ()
-  "Inserts a reversed pilcrow character. (Synonym of close-paragraph.)"
+  "Inserts a reversed pilcrow character. (Synonym of close-paragraph. Abbreviation: r-pi.)"
   (interactive)
   (insert "⁋")
   )
 ; (describe-function 'reversed-pilcrow)
 
 (defun right-angle-bracket ()
-  "Inserts a right angle bracket, a.k.a. ket."
+  "Inserts a right angle bracket, a.k.a. ket. (Abbreviation: ri-b.)"
   (interactive)
   (insert "⟩")
   )
 ; (describe-function 'right-angle-bracket)
 
 (defun right-arrow ()
-  "Inserts rightward-pointing arrow."
+  "Inserts rightward-pointing arrow. (Abbreviation: r-ar.)"
   (interactive)
   (insert "→")
   )
@@ -1347,6 +1262,13 @@
   )
 ; (describe-function 's-hacek)
 
+(defun seconds ()
+  "Inserts a '”' character, used to denote the word “seconds”."
+  (interactive)
+  (insert "”"))
+; (describe-function 'seconds)
+
+
 (defun section ()
   "Inserts a section symbol."
   (interactive)
@@ -1374,20 +1296,6 @@
   (insert "⇧")
   )
 ; (describe-function 'shift-key)
-
-(defun Sigma ()
-  "Inserts uppercase Greek letter Sigma."
-  (interactive)
-  (insert "Σ")
-  )
-; (describe-function 'Sigma)
-
-(defun sigma ()
-  "Inserts lowercase Greek letter sigma."
-  (interactive)
-  (insert "σ")
-  )
-; (describe-function 'sigma)
 
 (defun smile ()
   "Synonym of undertie."
@@ -1419,7 +1327,7 @@
 ; (describe-function 'squared)
 
 (defun square-root ()
-  "Insert mathematical symbol for SQUARE ROOT, or the beginning of it (without the overbar)."
+  "Insert mathematical symbol for SQUARE ROOT, or the beginning of it (without the overbar). (synonyms: chmk, DONE, radix)"
   (interactive)
   (insert "√")
   )
@@ -1622,20 +1530,6 @@
   )
 ; (describe-function 'therefore)
 
-(defun theta ()
-  "Inserts lowercase Greek letter theta."
-  (interactive)
-  (insert "θ")
-  )
-; (describe-function 'theta)
-
-(defun Theta ()
-  "Inserts uppercase Greek letter Theta."
-  (interactive)
-  (insert "Θ")
-  )
-; (describe-function 'Theta)
-
 (defun three-fourths ()
   "Inserts fraction three fourths."
   (interactive)
@@ -1690,7 +1584,14 @@
   (interactive)
   (insert "‿")
   )
-; (describe-function 'undertie)
+					; (describe-function 'undertie)
+
+(defun union ()
+  "Inserts the set-theoretic symbol for union. (synonym: cup)"
+  (interactive)
+  (insert "∪")
+  )
+; (describe-function 'union)
 
 (defun up-arrow ()
   "Inserts an upward-pointing arrow."
@@ -1712,13 +1613,6 @@
   (u-macron)
   )
 ; (describe-function "uu")
-
-(defun varphi ()
-  "Inserts variant of the lowercase Greek letter phi."
-  (interactive)
-  (insert "φ")
-  )
-					; (describe-function 'varphi)
 
 (defun vv ()
   "Inserts ’ve."
@@ -1797,13 +1691,6 @@
   )
 ; (describe-function 'will)
 
-(defun xi ()
-  "Greek letter, lowercase."
-  (interactive)
-  (insert "ξ")
-  )
-; (describe-function 'xi)
-
 (defun Y1 ()
   "For Icelandic: inserts capital letter Y with acute accent."
   (interactive)
@@ -1818,9 +1705,9 @@
   )
 ; (describe-function 'y1)
 
-(defun zeta ()
-  "Inserts lowercase Greek letter zeta."
+(defun yin-yang ()
+  "Inserts the taijitu symbol."
   (interactive)
-  (insert "ζ")
+  (insert "☯")
   )
-; (describe-function 'zeta)
+; (describe-function 'yin-yang)
