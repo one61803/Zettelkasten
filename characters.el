@@ -84,29 +84,6 @@
   )
 ; (describe-function 'almost-equal-to)
 
-(defun am1 ()
-  "Inserts apostrophe m."
-  (interactive)
-  (insert "’m")
-  )
-					; (describe-function 'am1)
-
-(defun amm ()
-  "Inserts apostrophe m."
-  (interactive)
-  (insert "’m")
-  )
-; (describe-function 'amm)
-
-(defun and-reply ()
-  "(?) (Akin to 'reply'.)"
-  (interactive)
-  (insert "&\n")
-  (insert "|\n")
-  (insert "┕--")
-  )
-; (describe-function 'and-reply)
-
 (defun apple-logo ()
   "Inserts the bitten-apple logo for Apple Corporation."
   (interactive)
@@ -120,13 +97,6 @@
   (insert "≈")
   )
 ; (describe-function 'approximately-equal-to)
-
-(defun are ()
-  "Inserts apostrophe re."
-  (interactive)
-  (insert "’re")
-  )
-; (describe-function 'are)
 
 (defun austral ()
   "Symbol for Argentine austral."
@@ -623,20 +593,6 @@
   )
 ; (describe-function 'ezh)
 
-(defun genitive ()
-  "Inserts apostrophe s."
-  (interactive)
-  (insert "’s")
-  )
-; (describe-function 'genitive)
-
-(defun GENITIVE ()
-  "Inserts apostrophe S."
-  (interactive)
-  (insert "’S")
-)
-					; (describe-function 'GENITIVE)
-
 (defun GTE ()
   "Inserts mathematical is-Greater-Than-or-Equal-to sign."
   (interactive)
@@ -657,13 +613,6 @@
   (insert "½")
   )
 					; (describe-function 'half)
-
-(defun havve ()
-  "Inserts apostrophe ve."
-  (interactive)
-  (insert "’ve")
-  )
-; (describe-function 'havve)
 
 (defun hearts ()
   "Inserts hearts suit symbol (for playing cards)."
@@ -810,13 +759,6 @@
   )
 ; (describe-function 'isomorphic-to)
 
-(defun iss ()
-  "Inserts apostrophe s."
-  (interactive)
-  (insert "’s")
-  )
-; (describe-function 'iss)
-
 (defun ket ()
   "Inserts ket symbol. Synonym of rangle and right-angle-bracket."
   (interactive)
@@ -859,7 +801,7 @@
 ; (describe-function 'leftwards-arrowbox)
 
 (defun ll ()
-  "Inserts ’ll."
+  "Inserts apostrophe ll."
   (interactive)
   (insert "’ll")
   )
@@ -941,20 +883,14 @@
   )
 ; (describe-function 'ndash)
 
-(defun n3wline ()
-  "Insert symbol of newline. (synonym: new-line, NewLine)"
-  (interactive)
-  (insert "␤"))
-; (describe-function 'n3wline)
-
 (defun new-line ()
-  "Insert symbol of newline. (synonym: n3wline, NewLine)"
+  "Insert symbol of newline. (synonym: NewLine)"
   (interactive)
   (insert "␤"))
 ; (describe-function 'new-line)
 
 (defun NewLine ()
-  "Insert symbol of newline. (synonyms: n3wline, new-line)"
+  "Insert symbol of newline. (synonyms: new-line)"
   (interactive)
   (insert "␤"))
 ; (describe-function 'NewLine)
@@ -1190,15 +1126,6 @@
   )
 ; (describe-function 'rangle)
 
-(defun reply ()
-  "(A more convenient alternative might be to use Org Mode’s tree structure.)"
-  (interactive)
-  (insert "|\n")
-  (insert "|\n")
-  (insert "┕--")
-  )
-; (describe-function 'reply)
-
 (defun reverse-comma ()
   "Example: Maʽat. (Abbreviation: rev-com.)"
   (interactive)
@@ -1242,7 +1169,7 @@
 ; (describe-function 'rightwards-double-arrow)
 
 (defun rr ()
-  "Inserts ’re."
+  "Inserts apostrophe 're'."
   (interactive)
   (insert "’re")
   )
@@ -1566,7 +1493,7 @@
 ; (describe-function 'tria)
 
 (defun tt ()
-  "Inserts ’t."
+  "Inserts apostrophe t."
   (interactive)
   (insert "’t")
   )
@@ -1683,13 +1610,6 @@
   (insert "☆")
   )
 ; (describe-function 'white-star)
-
-(defun will ()
-  "Inserts apostrophe ll."
-  (interactive)
-  (insert "’ll")
-  )
-; (describe-function 'will)
 
 (defun Y1 ()
   "For Icelandic: inserts capital letter Y with acute accent."
