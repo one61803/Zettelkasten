@@ -91,6 +91,12 @@
   )
 ; (describe-function 'apple-logo)
 
+(defun appointment ()
+  "Inserts a langle rangle pair."
+  (interactive)
+  (insert "⟨⟩"))
+; (describe-function 'appointment)
+
 (defun approximately-equal-to ()
   "Inserts the mathematical wavy-equals symbol meaning 'approximately equal to'."
   (interactive)
@@ -98,20 +104,18 @@
   )
 ; (describe-function 'approximately-equal-to)
 
-(defun austral ()
-  "Symbol for Argentine austral."
-  (interactive)
-  (insert "₳")
-  )
-; (describe-function 'austral)
-
-
 (defun ballot-box ()
   "Inserts an empty checkbox."
   (interactive)
   (insert "☐")
   )
 					; (describe-function 'ballot-box)
+
+(defun black-right-pointing-triangle ()
+  "Inserts a BLACK RIGHT-POINTING TRIANGLE character. (shortcut: bl-t)"
+  (interactive)
+  (insert "▶"))
+; (describe-function 'black-right-pointing-triangle)
 
 (defun bra ()
   "Synonym of left-angle-bracket and langle."
@@ -123,7 +127,7 @@
 (defun empty-checkbox ()
   "Synonym of ballot-box."
   (interactive)
-  (ballot-box)
+  (insert "☐")
   )
 ; (describe-function 'empty-checkbox)
 
@@ -270,21 +274,21 @@
 (defun check ()
   "Synonym of chmk."
   (interactive)
-  (chmk)
+  (insert "√")
   )
 ; (describe-function 'check)
 
 (defun checked-box ()
   "Synonym of ballot-box-with-check."
   (interactive)
-  (ballot-box-with-check)
+  (insert "☑")
   )
 ; (describe-function 'checked-box)
 
 (defun checked-checkbox ()
   "Synonym of ballot-box-with-check."
   (interactive)
-  (ballot-box-with-check)
+  (insert "☑")
   )
 ; (describe-function 'checked-checkbox)
 
@@ -345,7 +349,7 @@
 (defun command-key ()
   "Synonym of looped-square."
   (interactive)
-  (looped-square)
+  (insert "⌘")
   )
 ; (describe-function 'command-key)
 
@@ -376,13 +380,6 @@
   (insert "©")
   )
 ; (describe-function 'copyright-symbol)
-
-(defun CRLF ()
-  "Inserts the circled versions of the capital letters CRLF (Carriage Return Line Feed)."
-  (interactive)
-  (insert "ⒸⓇⓁⒻ")
-  )
-; (describe-function 'CRLF)
 
 (defun cross-mark ()
   "Inserts a red cross mark."
@@ -460,6 +457,12 @@
   )
 					; (describe-function 'diamonds)
 
+(defun ditto ()
+  "Inserts closing double quotation marks."
+  (interactive)
+  (insert "”"))
+; (describe-function 'ditto)
+
 (defun DONE ()
   "Prints a checkmark. (synonyms: chmk, square-root, radix)"
   (interactive)
@@ -470,7 +473,7 @@
 (defun DONE-tm ()
   "Prints the 'square root' of the current time."
   (interactive)
-  (chmk)
+  (insert "√")
   (tm)
   )
 ; (describe-function 'DONE-tm)
@@ -509,6 +512,12 @@
 )
 ; (describe-function 'e-macron)
 
+(defun Earth ()
+  "Inserts an EARTH character."
+  (interactive)
+  (insert "♁"))
+; (describe-function 'Earth)
+
 (defun ellipsis ()
   "Inserts single-character ellipsis."
   (interactive)
@@ -526,7 +535,7 @@
 (defun empty-box ()
   "Synonym of ballot-box."
   (interactive)
-  (ballot-box)
+  (insert "☐")
   )
 ; (describe-function 'empty-box)
 
@@ -573,7 +582,7 @@
 ; (describe-function 'esh)
 
 (defun eth ()
-  "Inserts IPA letter eth. (Synonym of dh.)"
+  "Inserts IPA letter eth. (synonym: dh)"
   (interactive)
   (insert "ð")
   )
@@ -592,6 +601,18 @@
   (insert "ʒ")
   )
 ; (describe-function 'ezh)
+
+(defun feet ()
+  "Inserts an apostrophe."
+  (interactive)
+  (insert "’"))
+					; (describe-function 'feet)
+
+(defun female-sign ()
+  "Inserts a FEMALE SIGN (synonym: Venus)."
+  (interactive)
+  (insert "♀"))
+; (describe-function 'female-sign)
 
 (defun GTE ()
   "Inserts mathematical is-Greater-Than-or-Equal-to sign."
@@ -651,7 +672,7 @@
 (defun ii ()
   "Synonym of i-macron."
   (interactive)
-  (i-macron)
+  (insert "ī")
   )
 ; (describe-function "ii")
 
@@ -759,6 +780,12 @@
   )
 ; (describe-function 'isomorphic-to)
 
+(defun Jupiter ()
+  "Inserts a JUPITER character."
+  (interactive)
+  (insert "♃"))
+; (describe-function 'Jupiter)
+
 (defun ket ()
   "Inserts ket symbol. Synonym of rangle and right-angle-bracket."
   (interactive)
@@ -772,6 +799,12 @@
   (insert "⟨")
   )
 ; (describe-function 'langle)
+
+(defun Latin-cross ()
+  "Inserts Latin cross character. (shortcut: L-cr)"
+  (interactive)
+  (insert "✝"))
+; (describe-function 'Latin-cross)
 
 (defun left-angle-bracket ()
   "Inserts a left angle bracket, a.k.a. bra."
@@ -807,6 +840,24 @@
   )
 ; (describe-function 'll)
 
+(defun logical-and ()
+  "Inserts LOGICAL AND math symbol. (shortcut: lo-a)"
+  (interactive)
+  (insert "∧"))
+					; (describe-function 'logical-and)
+
+(defun logical-not ()
+  "Inserts NOT SIGN math symbol. (shortcut: lo-n)"
+  (interactive)
+  (insert "¬"))
+; (describe-function 'logical-not)
+
+(defun logical-or ()
+  "Inserts LOGICAL OR math symbol. (shortcut: lo-o)"
+  (interactive)
+  (insert "∨"))
+					; (describe-function 'logical-or)
+
 (defun long-s ()
   "Inserts obsolete English letter long-s."
   (interactive)
@@ -828,6 +879,12 @@
 )
 ; (describe-function 'LTE)
 
+(defun Mars ()
+  "Inserts a MARS character."
+  (interactive)
+  (insert "♂"))
+; (describe-function 'Mars)
+
 (defun maps-to ()
   "Inserts mathematical/set-theoretical maps-to symbol. Note: if y = f(x), then f: x ↦ y."
   (interactive)
@@ -836,11 +893,17 @@
 					; (describe-function 'maps-to)
 
 (defun mdash ()
-  "Insert an mdash. (Note: Option+Shift+hyphen = mdash (on Mac).)"
+  "Inserts an mdash. (Note: Option+Shift+hyphen = mdash (on Mac).)"
   (interactive)
   (insert "—")
   )
 ; (describe-function 'mdash)
+
+(defun Mercury ()
+  "Inserts a MERCURY character."
+  (interactive)
+  (insert "☿"))
+; (describe-function 'Mercury)
 
 (defun minus ()
   "Inserts minus sign, as opposed to hyphen."
@@ -883,6 +946,12 @@
   )
 ; (describe-function 'ndash)
 
+(defun Neptune ()
+  "Inserts a NEPTUNE character."
+  (interactive)
+  (insert "♆"))
+; (describe-function 'Neptune)
+
 (defun new-line ()
   "Insert symbol of newline. (synonym: NewLine)"
   (interactive)
@@ -909,7 +978,6 @@
   )
 					; (describe-function 'n0t)
 					; (describe-function 'not)
-
 
 (defun not-equals ()
   "Inserts mathematical not-equals sign."
@@ -1081,9 +1149,15 @@
 (defun place-of-interest-sign ()
   "Synonym of looped square symbol."
   (interactive)
-  (looped-square)
+  (insert "⌘")
   )
 ; (describe-function 'place-of-interest-sign)
+
+(defun Pluto ()
+  "Inserts a PLUTO character."
+  (interactive)
+  (insert "♇"))
+; (describe-function 'Pluto)
 
 (defun pm ()
   "Inserts mathematical plus-or-minus symbol."
@@ -1112,6 +1186,12 @@
   (insert "′")
   )
 ; (describe-function 'prime)
+
+(defun quotation ()
+  "Inserts '«»'."
+  (interactive)
+  (insert "«»"))
+; (describe-function 'quotation)
 
 (defun radix ()
   "Inserts a square-root sign. (synonyms: chmk, DONE, square-root)"
@@ -1189,6 +1269,11 @@
   )
 ; (describe-function 's-hacek)
 
+(defun Saturn ()
+  "Inserts a SATURN character."
+  (insert "♄"))
+; (describe-function 'Saturn)
+
 (defun seconds ()
   "Inserts a '”' character, used to denote the word “seconds”."
   (interactive)
@@ -1227,7 +1312,7 @@
 (defun smile ()
   "Synonym of undertie."
   (interactive)
-  (undertie)
+  (insert "‿")
   (message "undertie")
   )
 ; (describe-function 'smile)
@@ -1344,6 +1429,12 @@
   (insert "₉")
   )
 ; (describe-function 'sub-9)
+
+(defun Sun ()
+  "Inserts a SUN character."
+  (interactive)
+  (insert "☉"))
+; (describe-function 'Sun)
 
 (defun sup-M ()
   "Inserts superscripted capital M."
@@ -1534,12 +1625,24 @@
   )
 ; (describe-function 'upside-down-exclamation-mark)
 
+(defun Uranus ()
+  "Inserts a URANUS character."
+  (interactive)
+  (insert "♅"))
+; (describe-function 'Uranus)
+
 (defun uu ()
   "Synonym of u-macron."
   (interactive)
-  (u-macron)
+  (insert "ū")
   )
 ; (describe-function "uu")
+
+(defun Venus ()
+  "Inserts a FEMALE SIGN (synonym: female-sign)."
+  (interactive)
+  (insert "♀"))
+; (describe-function 'Venus)
 
 (defun vv ()
   "Inserts ’ve."
