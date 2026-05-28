@@ -78,26 +78,19 @@
   (insert "â"))
 ; (describe-function 'a-circumflex)
 
+(defun A-macron ()
+  "Inserts an 'A' with a macron on top of it."
+  (interactive)
+  (insert "Ā")
+  )
+					; (describe-function "A-macron")
+
 (defun a-macron ()
   "Inserts an 'a' with a macron on top of it."
   (interactive)
   (insert "ā")
   )
 					; (describe-function "a-macron")
-
-(defun A-macron ()
-  "Inserts an 'A' with a macron on top of it."
-  (interactive)
-  (insert "Ā")
-  )
-; (describe-function "A-macron")
-
-(defun aa ()
-  "Synonym of a-macron."
-  (interactive)
-  (a-macron)
-  )
-					; (describe-function "aa")
 
 (defun AA ()
   "Synonym of A-macron."
@@ -106,12 +99,12 @@
   )
 ; (describe-function "AA")
 
-(defun ae ()
-  "For Danish or Icelandic: inserts lowercase ligature of a and e."
+(defun aa ()
+  "Synonym of a-macron."
   (interactive)
-  (insert "æ")
+  (a-macron)
   )
-; (describe-function 'ae)
+					; (describe-function "aa")
 
 (defun AE ()
   "For Icelandic or Danish: inserts uppercase ligature of A and E."
@@ -119,6 +112,26 @@
   (insert "Æ")
   )
 ; (describe-function 'AE)
+
+(defun ae ()
+  "For Danish or Icelandic: inserts lowercase ligature of a and e."
+  (interactive)
+  (insert "æ")
+  )
+; (describe-function 'ae)
+
+(defun aesc ()
+  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
+  (interactive)
+  (insert "æ"))
+					; (describe-function 'aesc)
+
+(defun aesh ()
+  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
+  (interactive)
+  (insert "æ"))
+					; (describe-function 'aesh)
+; Note: There is already a function called “ash”, said to be part of “C source code”: (describe-function 'ash)
 
 (defun almost-equal-to ()
   "For mathematics: inserts the symbol for ALMOST EQUAL TO or 'approximately equal to'."
@@ -146,19 +159,6 @@
   (insert "≈")
   )
 ; (describe-function 'approximately-equal-to)
-
-(defun aesc ()
-  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
-  (interactive)
-  (insert "æ"))
-					; (describe-function 'aesc)
-
-(defun aesh ()
-  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
-  (interactive)
-  (insert "æ"))
-					; (describe-function 'aesh)
-; Note: There is already a function called “ash”, said to be part of “C source code”: (describe-function 'ash)
 
 (defun bra ()
   "Inserts a Mathematical Left Angle Bracket followed by a Vertical Line."
@@ -466,19 +466,19 @@
   )
 ; (describe-function 'degrees)
 
-(defun dh ()
-  "For Icelandic: inserts a lowercase letter corresponding to English digraph 'th' (voiced). (Synonym of eth.)"
-  (interactive)
-  (insert "ð")
-  )
-; (describe-function 'dh)
-
 (defun DH ()
   "For Icelandic: inserts an uppercase letter corresponding to English digraph 'TH' (voiced)."
   (interactive)
   (insert "Ð")
   )
 ; (describe-function 'DH)
+
+(defun dh ()
+  "For Icelandic: inserts a lowercase letter corresponding to English digraph 'th' (voiced). (Synonym of eth.)"
+  (interactive)
+  (insert "ð")
+  )
+; (describe-function 'dh)
 
 (defun diameter ()
   "Inserts a DIAMETER SIGN."
@@ -1351,12 +1351,6 @@ L
   (interactive)
   (insert "¶◗"))
 ; (describe-function 'paragraph)
-
-;(defun paragraph-sign ()
-;  "Inserts CURVED STEM PARAGRAPH SIGN ORNAMENT character. (shortcut: par-s)"
-;  (interactive)
-;  (insert "❡"))
-;; (describe-function 'paragraph-sign)
 
 (defun parallel ()
   "Inserts the geometrical symbol for parallel lines."
