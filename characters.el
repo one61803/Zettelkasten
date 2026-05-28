@@ -1,6 +1,18 @@
 (load-file "quotes.el")
 (load-file "trigram.el")
 
+(defun character ()
+  "Generating function: writes a function for inserting some given character."
+  (interactive)
+  (let (name char desc)
+    (setq name (read-string "Enter the name for the new function: "))
+    (setq char (read-string "Enter the character: "))
+    (setq desc (string-replace "-" " " name))
+    (insert (concat "(defun " name " ()\n  \"Inserts a " desc " character.\"\n  (interactive)\n  (insert \"" char "\"))\n; (describe-function '" name ")\n"))
+    )
+  )
+					; (describe-function 'character)
+
 (defun A0 ()
   "For Danish: inserts Å."
   (interactive)
@@ -15,6 +27,31 @@
   )
 
 					; (describe-function 'a0)
+
+(defun A-breve ()
+  "For Romanian: inserts uppercase 'a cu brev'."
+  (interactive)
+  (insert "Ă"))
+; (describe-function 'A-breve)
+
+(defun a-breve ()
+  "For Romanian: inserts lowercase 'a cu brev'."
+  (interactive)
+  (insert "ă"))
+; (describe-function 'a-breve)
+
+(defun A-ogonek ()
+  "For Polish: inserts LATIN CAPITAL LETTER A WITH OGONEK."
+  (interactive)
+  (insert "Ą"))
+					; (describe-function 'A-ogonek)
+
+(defun a-ogonek ()
+  "For Polish: inserts LATIN SMALL LETTER A WITH OGONEK."
+  (interactive)
+  (insert "ą"))
+; (describe-function 'a-ogonek)
+
 (defun A-circle ()
   "For Danish: inserts Å."
   (interactive)
@@ -28,6 +65,18 @@
   (insert "å")
   )
 ; (describe-function 'a-circle)
+
+(defun A-circumflex ()
+  "For Romanian: inserts an uppercase 'a cu circumflex'."
+  (interactive)
+  (insert "Â"))
+; (describe-function 'A-circumflex)
+
+(defun a-circumflex ()
+  "For Romanian: inserts a lowercase 'a cu circumflex'."
+  (interactive)
+  (insert "â"))
+; (describe-function 'a-circumflex)
 
 (defun a-macron ()
   "Inserts an 'a' with a macron on top of it."
@@ -71,18 +120,18 @@
   )
 ; (describe-function 'AE)
 
-(defun alembic ()
-  "Inserts ALEMBIC character."
-  (interactive)
-  (insert "⚗"))
-; (describe-function 'alembic)
-
 (defun almost-equal-to ()
   "For mathematics: inserts the symbol for ALMOST EQUAL TO or 'approximately equal to'."
   (interactive)
   (insert "≈")
   )
 ; (describe-function 'almost-equal-to)
+
+(defun angle-brackets ()
+  "Inserts a pair of angle brackets."
+  (interactive)
+  (insert "⟨⟩"))
+; (describe-function 'angle-brackets)
 
 (defun apple-logo ()
   "Inserts the bitten-apple logo for Apple Corporation."
@@ -91,12 +140,6 @@
   )
 ; (describe-function 'apple-logo)
 
-(defun appointment ()
-  "Inserts a langle rangle pair."
-  (interactive)
-  (insert "⟨⟩"))
-; (describe-function 'appointment)
-
 (defun approximately-equal-to ()
   "Inserts the mathematical wavy-equals symbol meaning 'approximately equal to'."
   (interactive)
@@ -104,46 +147,25 @@
   )
 ; (describe-function 'approximately-equal-to)
 
-(defun ballot-box ()
-  "Inserts an empty checkbox."
+(defun aesc ()
+  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
   (interactive)
-  (insert "☐")
-  )
-					; (describe-function 'ballot-box)
+  (insert "æ"))
+					; (describe-function 'aesc)
 
-(defun black-right-pointing-triangle ()
-  "Inserts a BLACK RIGHT-POINTING TRIANGLE character. (shortcut: bl-t)"
+(defun aesh ()
+  "Inserts IPA character LATIN SMALL LETTER AE (which is also the Old English letter “æsc”, pronounced like the English word “ash”)."
   (interactive)
-  (insert "▶"))
-; (describe-function 'black-right-pointing-triangle)
+  (insert "æ"))
+					; (describe-function 'aesh)
+; Note: There is already a function called “ash”, said to be part of “C source code”: (describe-function 'ash)
 
 (defun bra ()
-  "Synonym of left-angle-bracket and langle."
+  "Inserts a Mathematical Left Angle Bracket followed by a Vertical Line."
   (interactive)
-  (insert "⟨")
+  (insert "⟨|")
   )
-; (describe-function 'bra)
-
-(defun empty-checkbox ()
-  "Synonym of ballot-box."
-  (interactive)
-  (insert "☐")
-  )
-; (describe-function 'empty-checkbox)
-
-(defun ballot-box-with-check ()
-  "Inserts a checked checkbox."
-  (interactive)
-  (insert "☑")
-  )
-; (describe-function 'ballot-box-with-check)
-
-(defun ballot-box-with-x ()
-  "Inserts a crossed checkbox."
-  (interactive)
-  (insert "☒")
-  )
-; (describe-function 'ballot-box-with-x)
+					; (describe-function 'bra)
 
 (defun black-bishop ()
   "Inserts symbol for chess piece black bishop."
@@ -201,6 +223,12 @@
   )
 ; (describe-function 'black-star)
 
+(defun breve ()
+  "Inserts a BREVE."
+  (interactive)
+  (insert "˘"))
+; (describe-function 'breve)
+
 (defun bullet ()
   "Inserts special character BULLET."
   (interactive)
@@ -215,26 +243,26 @@
   )
 ; (describe-function 'BULLET)
 
-(defun C-CEDILLE ()
+(defun C-CEDILLA ()
   "For French and Portuguese. This function label is more pratical when using Caps Lock."
   (interactive)
   (insert "Ç")
   )
-; (describe-function 'C-CEDILLE)
+; (describe-function 'C-CEDILLA)
 
-(defun C-cedille ()
-  "For French and Portuguese: inserts a capital C with cedille."
+(defun C-cedilla ()
+  "For French and Portuguese: inserts a capital C with cedilla."
   (interactive)
   (insert "Ç")
   )
-; (describe-function 'C-cedille)
+; (describe-function 'C-cedilla)
 
-(defun c-cedille ()
-  "For French and Portuguese: inserts a lowercase C with cedille"
+(defun c-cedilla ()
+  "For French and Portuguese: inserts a lowercase C with cedilla"
   (interactive)
   (insert "ç")
   )
-; (describe-function 'c-cedille)
+; (describe-function 'c-cedilla)
 
 (defun C-hacek ()
   "Inserts uppercase Croatian letter C with hacek."
@@ -250,12 +278,30 @@
   )
 ; (describe-function 'c-hacek)
 
+(defun C1 ()
+  "For Polish: inserts LATIN CAPITAL LETTER C WITH ACUTE."
+  (interactive)
+  (insert "Ć"))
+; (describe-function 'C1)
+
+(defun c1 ()
+  "For Polish: inserts LATIN SMALL LETTER C WITH ACUTE."
+  (interactive)
+  (insert "ć"))
+; (describe-function 'c1)
+
 (defun cap ()
   "Inserts set-theoretical symbol for intersection. (synonym: intersection)"
   (interactive)
   (insert "∩")
   )
 ; (describe-function 'cap)
+
+(defun ceiling-function ()
+  "Inserts pair of upper-corner square brackets."
+  (interactive)
+  (insert "⎡⎤"))
+; (describe-function 'ceiling-function)
 
 (defun cents ()
   "Inserts monetary symbol for cents."
@@ -264,80 +310,53 @@
   )
 					; (describe-function 'cents)
 
-(defun ChatGPT ()
-  "Inserts a dingbat that is suggestive of the one used by ChatGPT to end its answers."
+(defun check-mark ()
+  "Inserts a CHECK MARK."
   (interactive)
-  (insert "❒")
-  )
-					; (describe-function 'ChatGPT)
+  (insert "✓"))
+; (describe-function 'check-mark)
 
-(defun check ()
-  "Synonym of chmk."
-  (interactive)
-  (insert "√")
-  )
-; (describe-function 'check)
-
-(defun checked-box ()
-  "Synonym of ballot-box-with-check."
-  (interactive)
-  (insert "☑")
-  )
-; (describe-function 'checked-box)
-
-(defun checked-checkbox ()
-  "Synonym of ballot-box-with-check."
-  (interactive)
-  (insert "☑")
-  )
-; (describe-function 'checked-checkbox)
-
-(defun chmk ()
-  "Prints a checkmark. (synonyms: DONE, square-root, radix)"
-  (interactive)
-  (insert "√")
-  )
-; (describe-function 'chmk)
-
-(defun circle-C ()
-  "Inserts trade or legal symbol for copyright. (synonym: CIRCLE-C)"
-  (interactive)
-  (insert "©")
-  )
-					; (describe-function 'circle-C)
-
-(defun CIRCLE-C ()
-  "Inserts trade or legal symbol for copyright. (synonym: circle-C)"
+(defun circled-C ()
+  "Inserts trade or legal symbol for copyright. (synonym: CIRCLED-C)"
   (interactive)
   (insert "©"))
-; (describe-function 'CIRCLE-C)
+					; (describe-function 'circled-C)
 
-(defun circle-R ()
+(defun CIRCLED-C ()
+  "Inserts trade or legal symbol for copyright. (synonym: circled-C)"
+  (interactive)
+  (insert "©"))
+; (describe-function 'CIRCLED-C)
+
+(defun circled-R ()
   "Inserts trade or legal symbol for registered."
   (interactive)
-  (insert "®")
-  )
-; (describe-function 'circle-R)
+  (insert "®"))
+; (describe-function 'circled-R)
 
-(defun circle-U ()
+(defun circled-U ()
   "Kosher rabbis’ union mark."
   (interactive)
-  (insert "Ⓤ")
-)
+  (insert "Ⓤ"))
+; (describe-function 'circled-U)
 
 (defun circled-white-star ()
   "Inserts special character CIRCLED WHITE STAR."
   (interactive)
-  (insert "✪")
-  )
+  (insert "✪"))
 					; (describe-function 'circled-white-star)
 
 (defun close-paragraph ()
-  "Inserts a reversed pilcrow sign character. (Synonym of reversed-pilcrow.)"
+  "Inserts RIGHT HALF BLACK CIRCLE."
   (interactive)
-  (insert "⁋")
-  )
+  (insert "◗"))
 ; (describe-function 'close-paragraph)
+
+(defun clock ()
+  "Inserts apostrophe 'clock'."
+  (interactive)
+  (insert "’clock"))
+; (describe-function 'clock)
 
 (defun clubs ()
   "Inserts symbol for suit of clubs (used with playing cards)."
@@ -367,6 +386,12 @@
   )
 ; (describe-function 'congruent-to)
 
+(defun contains-as-member ()
+  "Inserts CONTAINS AS MEMBER mathematical symbol."
+  (interactive)
+  (insert "∋"))
+; (describe-function 'contains-as-member)
+
 (defun control-key ()
   "Inserts symbol of control key."
   (interactive)
@@ -381,12 +406,17 @@
   )
 ; (describe-function 'copyright-symbol)
 
-(defun cross-mark ()
-  "Inserts a red cross mark."
+(defun cross-out ()
+  "Inserts a BOX DRAWINGS LIGHT DIAGONAL CROSS character."
   (interactive)
-  (insert "❌")
-  )
-; (describe-function 'cross-mark)
+  (insert "╳"))
+; (describe-function 'cross-out)
+
+(defun cube-root ()
+  "Inserts a symbol of the cube root function."
+  (interactive)
+  (insert "³√"))
+; (describe-function 'cube-root)
 
 (defun cubed ()
   "Inserts a superscripted 3."
@@ -450,12 +480,11 @@
   )
 ; (describe-function 'DH)
 
-(defun diamonds ()
-  "Inserts symbol for suit of diamonds (used with playing cards)."
+(defun diameter ()
+  "Inserts a DIAMETER SIGN."
   (interactive)
-  (insert "♦")
-  )
-					; (describe-function 'diamonds)
+  (insert "⌀"))
+; (describe-function 'diameter)
 
 (defun ditto ()
   "Inserts closing double quotation marks."
@@ -463,20 +492,24 @@
   (insert "”"))
 ; (describe-function 'ditto)
 
-(defun DONE ()
-  "Prints a checkmark. (synonyms: chmk, square-root, radix)"
+(defun divided-by ()
+  "Inserts a DIVISION SIGN."
   (interactive)
-  (insert "√")
+  (insert "÷"))
+; (describe-function 'division-sign)
+
+(defun DONE ()
+  "Prints a check mark."
+  (interactive)
+  (insert "✔")
   )
 					; (describe-function 'DONE)
 
-(defun DONE-tm ()
-  "Prints the 'square root' of the current time."
+(defun dot-operator ()
+  "Inserts a dot operator (U+22C5) character."
   (interactive)
-  (insert "√")
-  (tm)
-  )
-; (describe-function 'DONE-tm)
+  (insert "⋅"))
+; (describe-function 'dot-operator)
 
 (defun double-dagger ()
   "Inserts symbol DOUBLE DAGGER (useful for footnoting). (synonym: DOUBLE-DAGGER)"
@@ -512,11 +545,29 @@
 )
 ; (describe-function 'e-macron)
 
+(defun E-ogonek ()
+  "For Polish: inserts LATIN CAPITAL LETTER E WITH OGONEK."
+  (interactive)
+  (insert "Ę"))
+; (describe-function 'E-ogonek)
+
+(defun e-ogonek ()
+  "For Polish: inserts LATIN SMALL LETTER E WITH OGONEK."
+  (interactive)
+  (insert "ę"))
+; (describe-function 'e-ogonek)
+
 (defun Earth ()
   "Inserts an EARTH character."
   (interactive)
   (insert "♁"))
 ; (describe-function 'Earth)
+
+(defun eighth-note ()
+  "Inserts EIGHTH NOTE character."
+  (interactive)
+  (insert "♪"))
+; (describe-function 'eighth-note)
 
 (defun ellipsis ()
   "Inserts single-character ellipsis."
@@ -525,19 +576,12 @@
   )
 ; (describe-function 'ellipsis)
 
-(defun emoji ()
+(defun emoji-placeholder ()
   "Inserts a placeholder for an emoji: circled ‘e’."
   (interactive)
   (insert "ⓔ")
   )
 ; (describe-function 'emoji)
-
-(defun empty-box ()
-  "Synonym of ballot-box."
-  (interactive)
-  (insert "☐")
-  )
-; (describe-function 'empty-box)
 
 (defun empty-set ()
   "Inserts mathematical empty set symbol."
@@ -546,12 +590,25 @@
   )
 ; (describe-function 'empty-set)
 
-(defun end-of-proof ()
-  "Inserts mathematical End Of Proof symbol."
+(defun end-of-paragraph ()
+  "Inserts BLACK HALF RIGHT CIRCLE."
   (interactive)
-  (insert "∎")
+  (insert "◗"))
+; (describe-function 'end-of-paragraph)
+
+(defun end-of-proof ()
+  "Inserts a BLACK MEDIUM SQUARE."
+  (interactive)
+  (insert "◼")
   )
-; (describe-function 'end-of-proof)
+					; (describe-function 'end-of-proof)
+
+(defun end-of-text ()
+  "Inserts SYMBOL FOR END OF TEXT."
+  (interactive)
+  (insert "␃"))
+
+; (describe-function 'end-of-text)
 
 (defun eng ()
   "Inserts an IPA letter eng."
@@ -560,12 +617,11 @@
   )
 ; (describe-function 'eng)
 
-(defun envelope ()
-  "Inserts a text-style envelope symbol: U+2709, &#9993."
+(defun entails ()
+  "Inserts a turnstyle."
   (interactive)
-  (insert "✉")
-  )
-; (describe-function 'envelope)
+  (insert "⊢"))
+; (describe-function 'entails)
 
 (defun equivalent-to ()
   "Inserts mathematical equivalence symbol."
@@ -602,17 +658,35 @@
   )
 ; (describe-function 'ezh)
 
+(defun falsum ()
+  "Inserts an UP TACK (used to stand for the logical symbol for “false”)."
+  (interactive)
+  (insert "⊥"))
+; (describe-function 'falsum)
+
 (defun feet ()
   "Inserts an apostrophe."
   (interactive)
   (insert "’"))
 					; (describe-function 'feet)
 
-(defun female-sign ()
-  "Inserts a FEMALE SIGN (synonym: Venus)."
+(defun floor-function ()
+  "Inserts pair of lower-corner square brackets."
   (interactive)
-  (insert "♀"))
-; (describe-function 'female-sign)
+  (insert "⎣⎦"))
+; (describe-function 'floor-function)
+
+(defun for-all ()
+  "Insert FOR ALL."
+  (interactive)
+  (insert "∀"))
+; (describe-function 'for-all)
+
+(defun from-to ()
+  "Inserts LONG RIGHTWARDS ARROW."
+  (interactive)
+  (insert "⟶"))
+; (describe-function 'function)
 
 (defun GTE ()
   "Inserts mathematical is-Greater-Than-or-Equal-to sign."
@@ -635,13 +709,6 @@
   )
 					; (describe-function 'half)
 
-(defun hearts ()
-  "Inserts hearts suit symbol (for playing cards)."
-  (interactive)
-  (insert "♥")
-  )
-; (describe-function 'hearts)
-
 (defun helm-symbol ()
   "Inserts helm symbol."
   (interactive)
@@ -663,7 +730,25 @@
   )
 					; (describe-function 'hexa)
 
-(defun icon ()
+(defun I-circumflex ()
+  "For Romanian: inserts uppercase 'i cu circumflex'."
+  (interactive)
+  (insert "Î"))
+; (describe-function 'I-circumflex)
+
+(defun i-circumflex ()
+  "For Romanian: inserts lowercase 'i cu circumflex'."
+  (interactive)
+  (insert "î"))
+; (describe-function 'i-circumflex)
+
+(defun icon-placeholder ()
+  "Inserts a placeholder for an icon: circled ‘i’."
+  (interactive)
+  (insert "ⓘ"))
+					; (describe-function 'icon)
+
+(defun ICON-PLACEHOLDER ()
   "Inserts a placeholder for an icon: circled ‘i’."
   (interactive)
   (insert "ⓘ"))
@@ -691,11 +776,17 @@
 ; (describe-function 'identical-to)
 
 (defun iff ()
-  "Inserts logical equivalence or biconditional symbol."
+  "Inserts logical equivalence or biconditional symbol (LONG LEFT RIGHT DOUBLE ARROW)."
   (interactive)
-  (insert "⇔")
+  (insert "⟺")
   )
 ; (describe-function 'iff)
+
+(defun implies ()
+  "Inserts LONG RIGHTWARDS DOUBLE ARROW."
+  (interactive)
+  (insert "⟹"))
+; (describe-function 'implies)
 
 (defun in ()
   "Inserts set-theoretical is-a-member-of symbol. (synonym: is-in)"
@@ -719,9 +810,9 @@
 ; (describe-function 'index)
 
 (defun in-progress ()
-  "Inserts three point punctuation; used to indicate that a to-do item is in progress of being done."
+  "Inserts \"CONTAINS AS NORMAL SUBGROUP\" character."
   (interactive)
-  (insert "⁖")
+  (insert "⊳")
   )
 ; (describe-function 'in-progress)
 
@@ -732,6 +823,36 @@
   )
 					; (describe-function 'infinity)
 
+(defun integers ()
+  "Inserts DOUBLE-STRUCK CAPITAL Z."
+  (interactive)
+  (insert "ℤ"))
+; (describe-function 'integers)
+
+(defun integral ()
+  "Inserts integral symbol."
+  (interactive)
+  (insert "∫"))
+					; (describe-function 'integral)
+
+(defun integral-bottom ()
+  "Inserts BOTTOM HALF INTEGRAL."
+  (interactive)
+  (insert "⌡"))
+					; (describe-function 'integral-bottom)
+
+(defun integral-middle ()
+  "Inserts INTEGRAL EXTENSION."
+  (interactive)
+  (insert "⎮"))
+; (describe-function 'integral-middle)
+
+(defun integral-top ()
+  "Inserts TOP HALF INTEGRAL."
+  (interactive)
+  (insert "⌠"))
+; (describe-function 'integral-top)
+  
 (defun interpunct ()
   "Inserts an interpunct."
     (interactive)
@@ -785,29 +906,47 @@
   (interactive)
   (insert "♃"))
 ; (describe-function 'Jupiter)
-
+L    
 (defun ket ()
-  "Inserts ket symbol. Synonym of rangle and right-angle-bracket."
+  "Inserts a Mathematical Right Angle Bracket, preceded by a Vertical Line."
   (interactive)
-  (insert "⟩")
+  (insert "|⟩")
   )
 ; (describe-function 'ket)
 
+(defun L-stroke ()
+  "For Polish: inserts LATIN CAPITAL LETTER L WITH STROKE."
+  (interactive)
+  (insert "Ł"))
+; (describe-function 'L-stroke)
+
+(defun l-stroke ()
+  "For Polish: inserts LATIN SMALL LETTER L WITH STROKE."
+  (interactive)
+  (insert "ł"))
+; (describe-function 'l-stroke)
+
 (defun langle ()
-  "Inserts left angle bracket, a.k.a bra."
+  "Inserts Mathematical Left Angle Bracket."
   (interactive)
   (insert "⟨")
   )
 ; (describe-function 'langle)
 
-(defun Latin-cross ()
-  "Inserts Latin cross character. (shortcut: L-cr)"
+(defun Latin-alpha ()
+  "Inserts IPA character LATIN SMALL LETTER ALPHA, used to represent unrounded open back vowel."
   (interactive)
-  (insert "✝"))
-; (describe-function 'Latin-cross)
+  (insert "ɑ"))
+; (describe-function 'Latin-alpha)
+
+(defun Latin-epsilon ()
+  "Inserts IPA character LATIN SMALL LETTER OPEN E, used to represent unrounded mid-open front vowel."
+  (interactive)
+  (insert "ɛ"))
+; (describe-function 'Latin-epsilon)
 
 (defun left-angle-bracket ()
-  "Inserts a left angle bracket, a.k.a. bra."
+  "Inserts a Mathematical Left Angle Bracket."
   (interactive)
   (insert "⟨")
   )
@@ -827,18 +966,18 @@
   )
 ; (describe-function 'left-right-arrow)
 
-(defun leftwards-arrowbox ()
-  "Inserts a LEFTWARDS BLACK ARROW character. (shortcut: leftw)"
-  (interactive)
-  (insert "⬅"))
-; (describe-function 'leftwards-arrowbox)
-
 (defun ll ()
   "Inserts apostrophe ll."
   (interactive)
   (insert "’ll")
   )
-; (describe-function 'll)
+					; (describe-function 'll)
+
+(defun LL ()
+  "Inserts apostrophe LL."
+  (interactive)
+  (insert "’LL"))
+; (describe-function 'LL)
 
 (defun logical-and ()
   "Inserts LOGICAL AND math symbol. (shortcut: lo-a)"
@@ -879,6 +1018,18 @@
 )
 ; (describe-function 'LTE)
 
+(defun lunette ()
+  "Inserts a BREVE."
+  (interactive)
+  (insert "˘"))
+; (describe-function 'lunette)
+
+(defun macron ()
+  "Inserts a MACRON."
+  (interactive)
+  (insert "¯"))
+; (describe-function 'macron)
+
 (defun Mars ()
   "Inserts a MARS character."
   (interactive)
@@ -905,6 +1056,12 @@
   (insert "☿"))
 ; (describe-function 'Mercury)
 
+(defun micro ()
+  "Inserts Greek letter mu, used to mean ‘micro’ in some measurement unit."
+  (interactive)
+  (insert "μ"))
+; (describe-function 'micro)
+  
 (defun minus ()
   "Inserts minus sign, as opposed to hyphen."
   (interactive)
@@ -932,6 +1089,18 @@
   )
 ; (describe-function 'mona)
 
+(defun multiply ()
+  "Inserts MULTIPLICATION SIGN."
+  (interactive)
+  (insert "×"))
+; (describe-function 'multiply)
+
+(defun mutually-entail ()
+  "Inserts a LEFT TACK and a RIGHT TACK, back-to-back."
+  (interactive)
+  (insert "⊣⊢"))
+; (describe-function 'mutually-entail)
+
 (defun n-dot ()
   "For transcribed Sanskrit: inserts n with dot under it."
   (interactive)
@@ -939,12 +1108,48 @@
   )
 ; (describe-function 'n-dot)
 
+(defun N1 ()
+  "For Polish: inserts LATIN CAPITAL LETTER N WITH ACUTE."
+  (interactive)
+  (insert "Ń"))
+; (describe-function 'N1)
+
+(defun n1 ()
+  "For Polish: inserts LATIN SMALL LETTER N WITH ACUTE."
+  (interactive)
+  (insert "ń"))
+; (describe-function 'n1)
+
+(defun nabla ()
+  "Insert a del/nabla character (used in multivariable calculus)."
+  (interactive)
+  (insert "∇"))
+; (describe-function 'nabla)
+
+(defun natural-numbers ()
+  "Inserts DOUBLE-STRUCK CAPITAL N."
+  (interactive)
+  (insert "ℕ"))
+					; (describe-function 'natural-numbers)
+
+(defun naturals ()
+  "Inserts DOUBLE-STRUCK CAPITAL N."
+  (interactive)
+  (insert "ℕ"))
+; (describe-function 'naturals)
+
 (defun ndash ()
   "Insert an ndash. (Note: Option+hyphen = ndash (on Mac).)"
   (interactive)
   (insert "–")
   )
-; (describe-function 'ndash)
+					; (describe-function 'ndash)
+
+(defun NDASH ()
+  "Insert an ndash."
+  (interactive)
+  (insert "–"))
+; (describe-function 'NDASH)
 
 (defun Neptune ()
   "Inserts a NEPTUNE character."
@@ -986,6 +1191,12 @@
   )
 ; (describe-function 'not-equals)
 
+(defun not-in ()
+  "Inserts NOT AN ELEMENT OF."
+  (interactive)
+  (insert "∉"))
+; (describe-function 'not-in)
+
 (defun nulla ()
   "Inserts superscripted 0."
   (interactive)
@@ -1006,6 +1217,24 @@
   (insert "ő")
   )
 					; (describe-function 'o-double-acute)
+
+(defun o-minus ()
+  "Inserts CIRCLED MINUS character."
+  (interactive)
+  (insert "⊖"))
+; (describe-function 'o-minus)
+
+(defun O1 ()
+  "For Polish: inserts LATIN CAPITAL LETTER O WITH ACUTE."
+  (interactive)
+  (insert "Ó"))
+; (describe-function 'O1)
+
+(defun o1 ()
+  "For Polish: inserts LATIN SMALL LETTER O WITH ACUTE."
+  (interactive)
+  (insert "ó"))
+; (describe-function 'o1)
 
 (defun o11 ()
   "Inserts Hungarian long o-umlaut. (Synonyms: o-acute-acute, o-double-acute.)"
@@ -1077,12 +1306,24 @@
   )
 ; (describe-function 'open-center-black-star)
 
+(defun open-e ()
+  "Inserts IPA character LATIN SMALL LETTER OPEN E, used to represent unrounded mid-open front vowel."
+  (interactive)
+  (insert "ɛ"))
+; (describe-function 'open-e)
+
 (defun open-exclamation ()
   "For Spanish: inserts the inverted exclamation mark."
   (interactive)
   (insert "¡")
   )
 ; (describe-function 'open-exclamation)
+
+(defun open-o ()
+  "Inserts the IPA character Latin Small Letter Open O, which is used to represent an rounded mid-open back vowel."
+  (interactive)
+  (insert "ɔ"))
+; (describe-function 'open-o)
 
 (defun open-paragraph ()
   "Inserts a pilcrow character. (Synonym of pilcrow.)"
@@ -1105,11 +1346,17 @@
   )
 ; (describe-function 'option-key)
 
-(defun paragraph-sign ()
-  "Inserts CURVED STEM PARAGRAPH SIGN ORNAMENT character. (shortcut: par-s)"
+(defun paragraph ()
+  "Inserts a pilcrow and an end-of-paragraph sign, side by side. (A paragraph could be inserted between them.)"
   (interactive)
-  (insert "❡"))
-; (describe-function 'paragraph-sign)
+  (insert "¶◗"))
+; (describe-function 'paragraph)
+
+;(defun paragraph-sign ()
+;  "Inserts CURVED STEM PARAGRAPH SIGN ORNAMENT character. (shortcut: par-s)"
+;  (interactive)
+;  (insert "❡"))
+;; (describe-function 'paragraph-sign)
 
 (defun parallel ()
   "Inserts the geometrical symbol for parallel lines."
@@ -1131,6 +1378,12 @@
   (insert "⁵")
   )
 ; (describe-function 'penta)
+
+(defun pentagon ()
+  "Inserts an upright pentagon."
+  (interactive)
+  (insert "⬠"))
+; (describe-function 'pentagon)
 
 (defun pilcrow ()
   "Inserts a PILCROW SIGN."
@@ -1159,7 +1412,7 @@
   (insert "♇"))
 ; (describe-function 'Pluto)
 
-(defun pm ()
+(defun plus-minus ()
   "Inserts mathematical plus-or-minus symbol."
   (interactive)
   (insert "±")
@@ -1187,6 +1440,18 @@
   )
 ; (describe-function 'prime)
 
+(defun product ()
+  "Inserts an N-ARY PRODUCT character."
+  (interactive)
+  (insert "∏"))
+; (describe-function 'product)
+
+(defun question-equals ()
+  "Inserts a QUESTIONED EQUAL TO character."
+  (interactive)
+  (insert "≟"))
+; (describe-function 'question-equals)
+
 (defun quotation ()
   "Inserts '«»'."
   (interactive)
@@ -1200,7 +1465,7 @@
 )
 
 (defun rangle ()
-  "Inserts a right angle bracket, a.k.a. ket."
+  "Inserts a Mathematical Right Angle Bracket."
   (interactive)
   (insert "⟩")
   )
@@ -1220,15 +1485,8 @@
   )
 					; (describe-function 'reverse-exclamation-mark)
 
-(defun reversed-pilcrow ()
-  "Inserts a reversed pilcrow character. (Synonym of close-paragraph. Abbreviation: r-pi.)"
-  (interactive)
-  (insert "⁋")
-  )
-; (describe-function 'reversed-pilcrow)
-
 (defun right-angle-bracket ()
-  "Inserts a right angle bracket, a.k.a. ket. (Abbreviation: ri-b.)"
+  "Inserts a Mathematical Right Angle Bracket. (Abbreviation: ri-b.)"
   (interactive)
   (insert "⟩")
   )
@@ -1239,7 +1497,13 @@
   (interactive)
   (insert "→")
   )
-; (describe-function 'right-arrow)
+					; (describe-function 'right-arrow)
+
+(defun RIGHT-ARROW ()
+  "Inserts rightward-pointing arrow."
+  (interactive)
+  (insert "→"))
+; (describe-function 'RIGHT-ARROW)
 
 (defun rightwards-double-arrow ()
   "Inserts a rightwards double arrow character."
@@ -1255,12 +1519,30 @@
   )
 ; (describe-function 'rr)
 
+(defun RR ()
+  "Inserts apostrophe 'RE'."
+  (interactive)
+  (insert "’RE"))
+; (describe-function 'RR)
+
 (defun S-acute ()
   "For transcribed Sanskrit: inserts capital S with acute accent."
   (interactive)
   (insert "Ś")
   )
 ; (describe-function 'S-acute)
+
+(defun S-cedilla ()
+  "Example: https://arxiv.org/pdf/1507.03677."
+  (interactive)
+  (insert "Ş"))
+; (describe-function 'S-cedilla)
+
+(defun s-cedilla ()
+  "For Romanian: inserts lowercase s with cedilla (in lieu of virgule)."
+  (interactive)
+  (insert "ş"))
+; (describe-function 's-cedilla)
 
 (defun s-hacek ()
   "Inserts S HACEK."
@@ -1269,10 +1551,35 @@
   )
 ; (describe-function 's-hacek)
 
+(defun S1 ()
+  "Inserts a LATIN CAPITAL LETTER S WITH ACUTE."
+  (interactive)
+  (insert "Ś"))
+; (describe-function 'S1)
+
+(defun s1 ()
+  "Inserts a LATIN SMALL LETTER S WITH ACUTE."
+  (interactive)
+  (insert "ś"))
+; (describe-function 's1)
+
 (defun Saturn ()
   "Inserts a SATURN character."
+  (interactive)
   (insert "♄"))
 ; (describe-function 'Saturn)
+
+(defun schwa ()
+  "Inserts LATIN SMALL LETTER SCHWA, used in the IPA."
+  (interactive)
+  (insert "ə"))
+; (describe-function 'schwa)
+
+(defun script-a ()
+  "Inserts IPA character LATIN SMALL LETTER ALPHA, used to represent unrounded open back vowel."
+  (interactive)
+  (insert "ɑ"))
+; (describe-function 'script-a)
 
 (defun seconds ()
   "Inserts a '”' character, used to denote the word “seconds”."
@@ -1288,12 +1595,32 @@
   )
 ; (describe-function 'section)
 
+(defun SECTION ()
+  "Inserts a section symbol."
+  (interactive)
+  (insert "§")
+  )
+; (describe-function 'SECTION)
+
 (defun service-mark ()
   "inserts SERVICE MARK trade symbol."
   (interactive)
   (insert "℠")
   )
 ; (describe-function 'service-mark)
+
+(defun set-of-natural-numbers ()
+  "Inserts DOUBLE-STRUCK CAPITAL N."
+  (interactive)
+  (insert "ℕ"))
+; (describe-function 'set-of-natural-numbers)
+
+(defun shadowed-box ()
+  "Inserts a dingbat that is suggestive of the one used by ChatGPT to end its answers."
+  (interactive)
+  (insert "❒")
+  )
+					; (describe-function 'shadowed-box)
 
 (defun sharp-s ()
   "For German: inserts SHARP S."
@@ -1309,6 +1636,12 @@
   )
 ; (describe-function 'shift-key)
 
+(defun small-question-mark ()
+  "Inserts small question mark."
+  (interactive)
+  (insert "﹖"))
+; (describe-function 'small-question-mark)
+
 (defun smile ()
   "Synonym of undertie."
   (interactive)
@@ -1316,13 +1649,6 @@
   (message "undertie")
   )
 ; (describe-function 'smile)
-
-(defun smiley ()
-  "Inserts emoji smiley face."
-  (interactive)
-  (insert "☺")
-  )
-; (describe-function 'smiley)
 
 (defun spades ()
   "Inserts symbol for suit of spades (used with playing cards)."
@@ -1430,6 +1756,24 @@
   )
 ; (describe-function 'sub-9)
 
+(defun subset-of ()
+  "Inserts SUBSET OF character."
+  (interactive)
+  (insert "⊂"))
+					; (describe-function 'subset-of)
+
+(defun subset-of-or-equal-to ()
+  "Inserts SUBSET OF OR EQUAL TO character."
+  (interactive)
+  (insert "⊆"))
+; (describe-function 'subset-of-or-equal-to)
+
+(defun summation ()
+  "Inserts an N-ARY SUMMATION character."
+  (interactive)
+  (insert "∑"))
+; (describe-function 'summation)
+
 (defun Sun ()
   "Inserts a SUN character."
   (interactive)
@@ -1443,12 +1787,30 @@
   )
 ; (describe-function 'sup-M)
 
+(defun sup-minus ()
+  "Inserts superscripted minus sign."
+  (interactive)
+  (insert "⁻"))
+					; (describe-function 'sup-minus)
+
+(defun sup-n ()
+  "Inserts superscripted 'n'."
+  (interactive)
+  (insert "ⁿ"))
+; (describe-function 'sup-n)
+
 (defun sup-nd ()
   "Inserts superscripted 'nd', as in the word 'second'."
   (interactive)
   (insert "ⁿᵈ")
   )
 ; (describe-function 'sup-nd)
+
+(defun sup-plus ()
+  "Inserts SUPERSCRIPT PLUS SIGN, useful in chemistry."
+  (interactive)
+  (insert "⁺"))
+; (describe-function 'sup-plus)
 
 (defun sup-rd ()
   "Inserts superscripted 'rd', as in the word 'third'."
@@ -1499,6 +1861,12 @@
   )
 ; (describe-function 'sz)
 
+(defun T-cedilla ()
+  "For Romanian: inserts a capital T with a cedilla (as alternative to 'te cu virgulă')."
+  (interactive)
+  (insert "Ţ"))
+; (describe-function 'T-cedilla)
+
 (defun t-dot ()
   "For transcribed Sanskrit: inserts lowercase letter t with underdot."
   (interactive)
@@ -1512,6 +1880,11 @@
   (insert "☏")
   )
 ; (describe-function 'telephone)
+
+(defun tensor-product ()
+  "Inserts a CIRCLED TIMES character."
+  (interactive)
+  (insert "⊗"))
 
 (defun tetra ()
   "Inserts superscripted 4."
@@ -1555,12 +1928,11 @@
   )
 ; (describe-function 'three-fourths)
 
-(defun three-point-punctuation ()
-  "Inserts three point punctuation, used to indicate that a to-do item is in progress of being done."
+(defun times ()
+  "Inserts MULTIPLICATION SIGN."
   (interactive)
-  (insert "⁖")
-  )
-;(describe-function 'three-point-punctuation)
+  (insert "×"))
+;(describe-function 'times)
 
 (defun tombstone ()
   "Inserts a tombstone character, which is ≡ Q.E.D."
@@ -1569,12 +1941,24 @@
   )
 ; (describe-function 'tombstone)
 
+(defun tortoise-shell-brackets ()
+  "Inserts a LEFT and RIGHT pair of TORTOISE SHELL BRACKETS. (This could be for a to-do item that requires one to go somewhere outside of one’s home.)"
+  (interactive)
+  (insert "〔〕"))
+; (describe-function 'tortoise-shell-brackets)
+
 (defun trademark ()
   "Inserts trade symbol TRADEMARK (superscripted TM)."
   (interactive)
   (insert "™")
   )
 					; (describe-function 'trademark)
+
+(defun transpose ()
+  "Inserts MODIFIER LETTER CAPITAL T, for use with matrix algebra."
+  (interactive)
+  (insert "ᵀ"))
+; (describe-function 'transpose)
 
 (defun tria ()
   "Inserts a superscripted 3."
@@ -1588,7 +1972,31 @@
   (interactive)
   (insert "’t")
   )
-; (describe-function 'tt)
+					; (describe-function 'tt)
+
+(defun TT ()
+  "Inserts apostrophe T."
+  (interactive)
+  (insert "’T"))
+; (describe-function 'TT)
+
+(defun tuple ()
+  "Inserts a pair of angular brakets."
+  (interactive)
+  (insert "⟨⟩"))
+; (describe-function 'tuple)
+
+(defun turned-c ()
+  "Inserts the IPA character Latin Small Letter Open O, which is used to represent an rounded mid-open back vowel."
+  (interactive)
+  (insert "ɔ"))
+; (describe-function 'turned-c)
+
+(defun turned-r ()
+  "Inserts IPA character LATIN SMALL LETTER TURNED R."
+  (interactive)
+  (insert "ɹ"))
+; (describe-function 'turned-r)
 
 (defun u-macron ()
   "Inserts a 'u' with a macron on top of it."
@@ -1644,6 +2052,12 @@
   (insert "♀"))
 ; (describe-function 'Venus)
 
+(defun verum ()
+  "Inserts DOWN TACK (used here as the logical symbol for “true”)."
+  (interactive)
+  (insert "⊤"))
+; (describe-function 'verum)
+
 (defun vv ()
   "Inserts ’ve."
   (interactive)
@@ -1651,12 +2065,11 @@
   )
 ; (describe-function 'vv)
 
-(defun warning-sign ()
-  "Inserts a warning sign character."
+(defun wedge-product-symbol ()
+  "Same as LOGICAL AND, but repurposed for use in plane geometry."
   (interactive)
-  (insert "⚠")
-  )
-; (describe-function warning-sign)
+  (insert "∧"))
+; (describe-function 'wedge-product-symbol)
 
 (defun white-bishop ()
   "Inserts symbol for chess piece white bishop."
@@ -1664,6 +2077,12 @@
   (insert "♗")
   )
 ; (describe-function 'white-bishop)
+
+(defun white-bullet ()
+  "Inserts WHITE BULLET. (Black bullets could be used for closed (terminal) nodes of an outline (dendritic list). White bullets could be used for open (non-terminal) nodes of such an outline.)"
+  (interactive)
+  (insert "◦"))
+; (describe-function 'white-bullet)
 
 (defun white-king ()
   "Inserts symbol for chess piece white king."
@@ -1728,9 +2147,26 @@
   )
 ; (describe-function 'y1)
 
-(defun yin-yang ()
-  "Inserts the taijitu symbol."
+(defun Z-overdot ()
+  "For Polish: inserts a LATIN CAPITAL LETTER Z WITH DOT ABOVE."
   (interactive)
-  (insert "☯")
-  )
-; (describe-function 'yin-yang)
+  (insert "Ż"))
+; (describe-function 'Z-overdot)
+
+(defun z-overdot ()
+  "For Polish: inserts a LATIN SMALL LETTER Z WITH DOT ABOVE."
+  (interactive)
+  (insert "ż"))
+; (describe-function 'z-overdot)
+
+(defun Z1 ()
+  "For Polish: inserts LATIN CAPITAL LETTER Z WITH ACUTE."
+  (interactive)
+  (insert "Ź"))
+; (describe-function 'Z1)
+
+(defun z1 ()
+  "For Polish: inserts LATIN SMALL LETTER Z WITH ACUTE."
+  (interactive)
+  (insert "ź"))
+; (describe-function 'z1)
