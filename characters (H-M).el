@@ -1,0 +1,399 @@
+
+(defun h-bar ()
+  "For physics: reduced Planck’s constant."
+  (interactive)
+  (insert "ħ")
+  )
+; (describe-function 'h-bar)
+
+(defun half ()
+  "Inserts fraction one-half."
+  (interactive)
+  (insert "½")
+  )
+					; (describe-function 'half)
+
+(defun helm-symbol ()
+  "Inserts helm symbol."
+  (interactive)
+  (insert "⎈")
+  )
+; (describe-function 'helm-symbol)
+
+(defun hepta ()
+  "Inserts superscript 7."
+  (interactive)
+  (insert "⁷")
+  )
+; (describe-function 'hepta)
+
+(defun hexa ()
+  "Inserts superscript 6."
+  (interactive)
+  (insert "⁶")
+  )
+					; (describe-function 'hexa)
+
+(defun I-circumflex ()
+  "For Romanian: inserts uppercase 'i cu circumflex'."
+  (interactive)
+  (insert "Î"))
+; (describe-function 'I-circumflex)
+
+(defun i-circumflex ()
+  "For Romanian: inserts lowercase 'i cu circumflex'."
+  (interactive)
+  (insert "î"))
+; (describe-function 'i-circumflex)
+
+(defun icon-placeholder ()
+  "Inserts a placeholder for an icon: circled ‘i’."
+  (interactive)
+  (insert "ⓘ"))
+					; (describe-function 'icon)
+
+(defun ICON-PLACEHOLDER ()
+  "Inserts a placeholder for an icon: circled ‘i’."
+  (interactive)
+  (insert "ⓘ"))
+; (describe-function 'icon)
+
+(defun ii ()
+  "Synonym of i-macron."
+  (interactive)
+  (insert "ī")
+  )
+; (describe-function "ii")
+
+(defun i-macron ()
+  "Inserts an 'i' with a macron on top of it."
+  (interactive)
+  (insert "ī")
+  )
+; (describe-function "i-macron")
+
+(defun identical-to ()
+  "Inserts mathematical equivalence symbol. When two sides of an equation are equivalent to each other, i.e., equal for any value of their variable(s), then this symbol is applicable."
+  (interactive)
+  (insert "≡")
+  )
+; (describe-function 'identical-to)
+
+(defun iff ()
+  "Inserts logical equivalence or biconditional symbol (LONG LEFT RIGHT DOUBLE ARROW)."
+  (interactive)
+  (insert "⟺")
+  )
+; (describe-function 'iff)
+
+(defun implies ()
+  "Inserts LONG RIGHTWARDS DOUBLE ARROW."
+  (interactive)
+  (insert "⟹"))
+; (describe-function 'implies)
+
+(defun in ()
+  "Inserts set-theoretical is-a-member-of symbol. (synonym: is-in)"
+  (interactive)
+  (insert "∈")
+  )
+					; (describe-function 'in)
+
+(defun inches ()
+  "Inserts a '”'."
+  (interactive)
+  (insert "”")
+  )
+; (describe-function 'inches)
+  
+(defun index ()
+  "Insert character of hand pointing its index finger towards the right."
+  (interactive)
+  (insert "☞")
+  )
+; (describe-function 'index)
+
+(defun in-progress ()
+  "Inserts \"CONTAINS AS NORMAL SUBGROUP\" character."
+  (interactive)
+  (insert "⊳")
+  )
+; (describe-function 'in-progress)
+
+(defun infinity ()
+  "Inserts infinity symbol."
+  (interactive)
+  (insert "∞")
+  )
+					; (describe-function 'infinity)
+
+(defun integers ()
+  "Inserts DOUBLE-STRUCK CAPITAL Z."
+  (interactive)
+  (insert "ℤ"))
+; (describe-function 'integers)
+
+(defun integral ()
+  "Inserts integral symbol."
+  (interactive)
+  (insert "∫"))
+					; (describe-function 'integral)
+
+(defun integral-bottom ()
+  "Inserts BOTTOM HALF INTEGRAL."
+  (interactive)
+  (insert "⌡"))
+					; (describe-function 'integral-bottom)
+
+(defun integral-middle ()
+  "Inserts INTEGRAL EXTENSION."
+  (interactive)
+  (insert "⎮"))
+; (describe-function 'integral-middle)
+
+(defun integral-top ()
+  "Inserts TOP HALF INTEGRAL."
+  (interactive)
+  (insert "⌠"))
+; (describe-function 'integral-top)
+  
+(defun interpunct ()
+  "Inserts an interpunct."
+    (interactive)
+    (insert "·")
+    )
+					; (describe-function 'interpunct)
+
+(defun intersection ()
+  "Inserts the set-theoretic symbol for intersection. (synonym: cap)"
+  (interactive)
+  (insert "∩")
+  )
+; (describe-function 'intersection)
+
+(defun inverted-exclamation-mark ()
+  "For Spanish: inserts the inverted exclamation mark (U+00BF)."
+  (interactive)
+  (insert "¡")
+  )
+; (describe-function 'inverted-exclamation-mark)
+
+(defun inverted-question-mark ()
+  "For Spanish: inserts the inverted question mark (U+00A1)."
+  (interactive)
+  (insert "¿")
+  )
+; (describe-function 'inverted-question-mark)
+
+(defun is-in ()
+  "Inserts set-theoretical is-a-member-of symbol. (synonym: in)"
+  (interactive)
+  (insert "∈")
+  )
+					; (describe-function 'is-in)
+
+(defun is-not-in ()
+  "Inserts set-theoretical is-not-a-member-of symbol."
+  (interactive)
+  (insert "∉"))
+; (describe-function 'is-not-in)
+
+(defun isomorphic-to ()
+  "Inserts abstract-algebraic isomorphism symbol."
+  (interactive)
+  (insert "≅")
+  )
+; (describe-function 'isomorphic-to)
+
+(defun Jupiter ()
+  "Inserts a JUPITER character."
+  (interactive)
+  (insert "♃"))
+; (describe-function 'Jupiter)
+
+(defun L-stroke ()
+  "For Polish: inserts LATIN CAPITAL LETTER L WITH STROKE."
+  (interactive)
+  (insert "Ł"))
+; (describe-function 'L-stroke)
+
+(defun l-stroke ()
+  "For Polish: inserts LATIN SMALL LETTER L WITH STROKE."
+  (interactive)
+  (insert "ł"))
+; (describe-function 'l-stroke)
+
+(defun langle ()
+  "Inserts Mathematical Left Angle Bracket."
+  (interactive)
+  (insert "⟨")
+  )
+; (describe-function 'langle)
+
+(defun Latin-alpha ()
+  "Inserts IPA character LATIN SMALL LETTER ALPHA, used to represent unrounded open back vowel."
+  (interactive)
+  (insert "ɑ"))
+; (describe-function 'Latin-alpha)
+
+(defun Latin-epsilon ()
+  "Inserts IPA character LATIN SMALL LETTER OPEN E, used to represent unrounded mid-open front vowel."
+  (interactive)
+  (insert "ɛ"))
+; (describe-function 'Latin-epsilon)
+
+(defun left-angle-bracket ()
+  "Inserts a Mathematical Left Angle Bracket."
+  (interactive)
+  (insert "⟨")
+  )
+; (describe-function 'left-angle-bracket)
+
+(defun left-arrow ()
+  "Inserts left-pointing arrow."
+  (interactive)
+  (insert "←")
+  )
+; (describe-function 'left-arrow)
+
+(defun left-right-arrow ()
+  "Inserts a double-headed arrow. (shortcut: l-r-a)"
+  (interactive)
+  (insert "←→")
+  )
+; (describe-function 'left-right-arrow)
+
+(defun ll ()
+  "Inserts apostrophe ll."
+  (interactive)
+  (insert "’ll")
+  )
+					; (describe-function 'll)
+
+(defun LL ()
+  "Inserts apostrophe LL."
+  (interactive)
+  (insert "’LL"))
+; (describe-function 'LL)
+
+(defun logical-and ()
+  "Inserts LOGICAL AND math symbol. (shortcut: lo-a)"
+  (interactive)
+  (insert "∧"))
+					; (describe-function 'logical-and)
+
+(defun logical-not ()
+  "Inserts NOT SIGN math symbol. (shortcut: lo-n)"
+  (interactive)
+  (insert "¬"))
+; (describe-function 'logical-not)
+
+(defun logical-or ()
+  "Inserts LOGICAL OR math symbol. (shortcut: lo-o)"
+  (interactive)
+  (insert "∨"))
+					; (describe-function 'logical-or)
+
+(defun long-s ()
+  "Inserts obsolete English letter long-s."
+  (interactive)
+  (insert "ſ")
+  )
+; (describe-function 'long-s)
+
+(defun looped-square ()
+  "Inserts looped-square/place-of-interest character."
+  (interactive)
+  (insert "⌘")
+  )
+					; (describe-function 'looped-square)
+
+(defun LTE ()
+  "Inserts the mathematical is-Less-Than-or-Equal-to sign."
+  (interactive)
+  (insert "≤")
+)
+; (describe-function 'LTE)
+
+(defun lunette ()
+  "Inserts a BREVE."
+  (interactive)
+  (insert "˘"))
+; (describe-function 'lunette)
+
+(defun macron ()
+  "Inserts a MACRON."
+  (interactive)
+  (insert "¯"))
+; (describe-function 'macron)
+
+(defun Mars ()
+  "Inserts a MARS character."
+  (interactive)
+  (insert "♂"))
+; (describe-function 'Mars)
+
+(defun maps-to ()
+  "Inserts mathematical/set-theoretical maps-to symbol. Note: if y = f(x), then f: x ↦ y."
+  (interactive)
+  (insert "↦")
+  )
+					; (describe-function 'maps-to)
+
+(defun mdash ()
+  "Inserts an mdash. (Note: Option+Shift+hyphen = mdash (on Mac).)"
+  (interactive)
+  (insert "—")
+  )
+; (describe-function 'mdash)
+
+(defun Mercury ()
+  "Inserts a MERCURY character."
+  (interactive)
+  (insert "☿"))
+; (describe-function 'Mercury)
+
+(defun micro ()
+  "Inserts Greek letter mu, used to mean ‘micro’ in some measurement unit."
+  (interactive)
+  (insert "μ"))
+; (describe-function 'micro)
+  
+(defun minus ()
+  "Inserts minus sign, as opposed to hyphen."
+  (interactive)
+  (insert "−")
+  )
+					; (describe-function 'minus)
+
+(defun minutes ()
+  "Inserts a '’' character, used to denote the word “minutes”."
+  (interactive)
+  (insert "’"))
+; (describe-function 'minutes)
+
+(defun mm ()
+  "Inserts apostrophe m."
+  (interactive)
+  (insert "’m")
+  )
+; (describe-function 'mm)
+
+(defun mona ()
+  "Inserts uppercase 1."
+  (interactive)
+  (insert "¹")
+  )
+; (describe-function 'mona)
+
+(defun multiply ()
+  "Inserts MULTIPLICATION SIGN."
+  (interactive)
+  (insert "×"))
+; (describe-function 'multiply)
+
+(defun mutually-entail ()
+  "Inserts a LEFT TACK and a RIGHT TACK, back-to-back."
+  (interactive)
+  (insert "⊣⊢"))
+; (describe-function 'mutually-entail)
