@@ -242,6 +242,39 @@
   (insert "ɛ"))
 ; (describe-function 'Latin-epsilon)
 
+(defun lax-a ()
+  "Inserts LATIN SMALL LETTER ALPHA, labeled for use for IPA."
+  (interactive)
+  (insert "ɑ")
+  )
+; (describe-function 'lax-a)
+
+(defun lax-e ()
+  "Inserts LATIN SMALL LETTER OPEN E, labeled for use with IPA."
+  (interactive)
+  (insert "ɛ")
+  )
+					; (describe-function 'lax-e)
+
+(defun lax-i ()
+  "Inserts LATIN LETTER SMALL CAPITAL I, labeled for use for IPA."
+  (interactive)
+  (insert "ɪ"))
+; (describe-function 'lax-i)
+
+(defun lax-o ()
+  "Inserts LATIN SMALL LETTER OPEN O, labeled for use for IPA."
+  (interactive)
+  (insert "ɔ"))
+; (describe-function 'lax-o)
+
+(defun lax-u ()
+  "Inserts LATIN SMALL LETTER UPSILON, labeled for use for IPA."
+  (interactive)
+  (insert "ʊ")
+  )
+					; (describe-function 'lax-u)
+
 (defun left-angle-bracket ()
   "Inserts a Mathematical Left Angle Bracket."
   (interactive)
@@ -300,6 +333,13 @@
   (insert "ſ")
   )
 ; (describe-function 'long-s)
+
+(defun long-vowel ()
+  "Inserts MODIFIER LETTER TRIANGULAR COLOR, labeled for use for IPA."
+  (interactive)
+  (insert "ː")
+  )
+; (describe-function 'long-vowel)
 
 (defun looped-square ()
   "Inserts looped-square/place-of-interest character."
@@ -390,7 +430,14 @@
   "Inserts MULTIPLICATION SIGN."
   (interactive)
   (insert "×"))
-; (describe-function 'multiply)
+					; (describe-function 'multiply)
+
+(defun musical-note ()
+  "Inserts a musical note."
+  (interactive)
+  (insert "♪")
+  )
+; (describe-function 'musical-note)
 
 (defun mutually-entail ()
   "Inserts a LEFT TACK and a RIGHT TACK, back-to-back."
