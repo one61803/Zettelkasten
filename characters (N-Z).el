@@ -56,16 +56,17 @@
 ; (describe-function 'Neptune)
 
 (defun new-line ()
-  "Insert symbol of newline. (synonym: NewLine)"
+  "Insert SYMBOL FOR NEWLINE. (synonyms: NEW-LINE)"
   (interactive)
   (insert "␤"))
 ; (describe-function 'new-line)
 
-(defun NewLine ()
-  "Insert symbol of newline. (synonyms: new-line)"
+(defun NEW-LINE ()
+  "Inserts SYMBOL FOR NEWLINE. (synonyms: new-line)"
   (interactive)
-  (insert "␤"))
-; (describe-function 'NewLine)
+  (insert "␤")
+  )
+; (describe-function 'NEW-LINE)
 
 (defun nona ()
   "Inserts superscripted 9."
@@ -338,6 +339,13 @@
   (insert "∏"))
 ; (describe-function 'product)
 
+(defun quaternions ()
+  "Inserts DOUBLE-STRUCK CAPITAL H."
+  (interactive)
+  (insert "ℍ")
+  )
+; (describe-function 'quaternions)
+
 (defun question-equals ()
   "Inserts a QUESTIONED EQUAL TO character."
   (interactive)
@@ -362,7 +370,21 @@
   (interactive)
   (insert "⟩")
   )
-; (describe-function 'rangle)
+					; (describe-function 'rangle)
+
+(defun rational-numbers ()
+  "Inserts DOUBLE-STRUCK CAPITAL Q."
+  (interactive)
+  (insert "ℚ")
+  )
+; (describe-function 'rational-numbers)
+
+(defun real-numbers ()
+  "Inserts DOUBLE-STRUCK CAPITAL R."
+  (interactive)
+  (insert "ℝ")
+  )
+; (describe-function 'real-numbers)
 
 (defun reverse-comma ()
   "Example: Maʽat. (Abbreviation: rev-com.)"
