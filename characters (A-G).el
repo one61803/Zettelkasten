@@ -145,6 +145,13 @@
   )
 ; (describe-function 'approximately-equal-to)
 
+(defun because ()
+  "Inserts BECAUSE character."
+  (interactive)
+  (insert "∵")
+  )
+; (describe-function 'because)
+
 (defun black-star ()
   "Inserts special character BLACK STAR."
   (interactive)
@@ -226,6 +233,20 @@
   )
 ; (describe-function 'cap)
 
+(defun CC ()
+  "Inserts uppercase c-cedilla."
+  (interactive)
+  (insert "Ç")
+  )
+; (describe function 'CC)
+
+(defun cc ()
+  "Inserts lowercase c-cedilla."
+  (interactive)
+  (insert "ç")
+  )
+; (describe-function cc)
+
 (defun ceiling-function ()
   "Inserts pair of upper-corner square brackets."
   (interactive)
@@ -244,6 +265,13 @@
   (interactive)
   (insert "✓"))
 ; (describe-function 'check-mark)
+
+(defun CHECK-MARK ()
+  "Inserts a CHECK MARK."
+  (interactive)
+  (insert "✓")
+  )
+; (describe-function 'CHECK-MARK)
 
 (defun circled-C ()
   "Inserts trade or legal symbol for copyright. (synonym: CIRCLED-C)"
@@ -308,6 +336,13 @@
   )
 ; (describe-function 'complement)
 
+(defun complex-numbers ()
+  "Inserts DOUBLE-STRUCK CAPITAL C."
+  (interactive)
+  (insert "ℂ")
+  )
+; (describe-function 'complex-numbers)
+
 (defun congruent-to ()
   "Inserts geometrical symbol of congruence."
   (interactive)
@@ -360,6 +395,13 @@
   (insert "∪")
   )
 ; (describe-function 'cup)
+
+(defun d-Alembertian ()
+  "Inserts a WHITE SQUARE character. (synonym: quabla)"
+  (interactive)
+  (insert "□")
+  )
+; (describe-function 'd-Alembertian)
 
 (defun d-dot ()
   "Inserts a d with a dot under it (for Pali)."
@@ -510,7 +552,14 @@
   (interactive)
   (insert "ⓔ")
   )
-; (describe-function 'emoji)
+; (describe-function 'emoji-placeholder)
+
+(defun EMOJI-PLACEHOLDER ()
+  "Inserts a placeholder for an emoji: circled ‘e’."
+  (interactive)
+  (insert "ⓔ")
+  )
+; (describe-function 'EMOJI-PLACEHOLDER)
 
 (defun empty-set ()
   "Inserts mathematical empty set symbol."
