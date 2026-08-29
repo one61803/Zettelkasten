@@ -49,6 +49,13 @@
   (insert "–"))
 ; (describe-function 'NDASH)
 
+(defun necessarily ()
+  "For modal logic. Inserts a WHITE SQUARE character."
+  (interactive)
+  (insert "□")
+  )
+; (describe-function 'necessarily)
+
 (defun Neptune ()
   "Inserts a NEPTUNE character."
   (interactive)
@@ -82,6 +89,13 @@
   )
 					; (describe-function 'n0t)
 					; (describe-function 'not)
+
+(defun no-break-space ()
+  "Inserts a NO-BREAK SPACE."
+  (interactive)
+  (insert " ")
+  )
+; (describe-function 'no-break-space)
 
 (defun not-equals ()
   "Inserts mathematical not-equals sign."
@@ -319,6 +333,13 @@
   )
 ; (describe-function 'pointer)
 
+(defun possibly ()
+  "For modal logic. Inserts a WHITE DIAMOND SUIT character."
+  (interactive)
+  (insert "♢")
+  )
+; (describe-function 'possibly)
+
 (defun pounds ()
   "Inserts monetary unit British pound."
   (interactive)
@@ -338,6 +359,13 @@
   (interactive)
   (insert "∏"))
 ; (describe-function 'product)
+
+(defun quabla ()
+  "Inserts a WHITE SQUARE character. (synonym: d-Alembertian)"
+  (interactive)
+  (insert "□")
+  )
+; (describe-function 'quabla)
 
 (defun quaternions ()
   "Inserts DOUBLE-STRUCK CAPITAL H."
@@ -387,14 +415,14 @@
 ; (describe-function 'real-numbers)
 
 (defun reverse-comma ()
-  "Example: Maʽat. (Abbreviation: rev-com.)"
+  "Example: Maʽat."
   (interactive)
   (insert "ʽ")
   )
 ; (describe-function 'reverse-comma)
 
 (defun reverse-exclamation-mark ()
-  "For Spanish: inserts opening/reverse exclamation mark. (Abbreviation: r-ex.)"
+  "For Spanish: inserts opening/reverse exclamation mark."
   (interactive)
   (insert "¡")
   )
@@ -912,6 +940,13 @@
   (interactive)
   (insert "ɹ"))
 ; (describe-function 'turned-r)
+
+(defun u-hacek ()
+  "Inserts LATIN SMALL LETTER U WITH CARON. (useful for Pinyin)"
+  (interactive)
+  (insert "ǔ")
+  )
+; (describe-function 'u-hacek)
 
 (defun u-macron ()
   "Inserts a 'u' with a macron on top of it."
