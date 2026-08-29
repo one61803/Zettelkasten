@@ -429,29 +429,29 @@
 					; (describe-function 'reverse-exclamation-mark)
 
 (defun right-angle-bracket ()
-  "Inserts a Mathematical Right Angle Bracket. (Abbreviation: ri-b.)"
+  "Inserts a Mathematical Right Angle Bracket."
   (interactive)
   (insert "⟩")
   )
 ; (describe-function 'right-angle-bracket)
 
 (defun right-arrow ()
-  "Inserts rightward-pointing arrow. (Abbreviation: r-ar.)"
+  "Inserts rightward-pointing arrow."
   (interactive)
-  (insert "→")
+  (insert "⟶")
   )
 					; (describe-function 'right-arrow)
 
 (defun RIGHT-ARROW ()
   "Inserts rightward-pointing arrow."
   (interactive)
-  (insert "→"))
+  (insert "⟶"))
 ; (describe-function 'RIGHT-ARROW)
 
 (defun rightwards-double-arrow ()
   "Inserts a rightwards double arrow character."
   (interactive)
-  (insert "⇒")
+  (insert "⟹")
   )
 ; (describe-function 'rightwards-double-arrow)
 
