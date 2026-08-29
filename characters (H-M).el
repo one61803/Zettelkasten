@@ -46,6 +46,27 @@
   (insert "î"))
 ; (describe-function 'i-circumflex)
 
+(defun i-dotless ()
+  "For Turkish: inserts LATIN SMALL LETTER DOTLESS I. (Example: 'yıldızlar' = 'stars')"
+  (interactive)
+  (insert "ı")
+  )
+; (describe-function 'i-dotless)
+
+(defun i-hacek ()
+  "Inserts a LATIN SMALL LETTER I WITH CARON. (useful for Pinyin)"
+  (interactive)
+  (insert "ǐ")
+  )
+; (describe-function 'i-hacek)
+
+(defun i-macron ()
+  "Inserts an 'i' with a macron on top of it."
+  (interactive)
+  (insert "ī")
+  )
+					; (describe-function "i-macron")
+
 (defun icon-placeholder ()
   "Inserts a placeholder for an icon: circled ‘i’."
   (interactive)
@@ -64,13 +85,6 @@
   (insert "ī")
   )
 ; (describe-function "ii")
-
-(defun i-macron ()
-  "Inserts an 'i' with a macron on top of it."
-  (interactive)
-  (insert "ī")
-  )
-; (describe-function "i-macron")
 
 (defun identical-to ()
   "Inserts mathematical equivalence symbol. When two sides of an equation are equivalent to each other, i.e., equal for any value of their variable(s), then this symbol is applicable."
@@ -334,6 +348,13 @@
   )
 ; (describe-function 'long-s)
 
+(defun long-consonant ()
+  "Inserts MODIFIER LETTER TRIANGULAR COLOR, labeled for use for IPA."
+  (interactive)
+  (insert "ː")
+  )
+; (describe-function 'long-consonant)
+
 (defun long-vowel ()
   "Inserts MODIFIER LETTER TRIANGULAR COLOR, labeled for use for IPA."
   (interactive)
@@ -374,9 +395,9 @@
 ; (describe-function 'Mars)
 
 (defun maps-to ()
-  "Inserts mathematical/set-theoretical maps-to symbol. Note: if y = f(x), then f: x ↦ y."
+  "Inserts mathematical/set-theoretical maps-to symbol. Note: if y = f(x), then f: x ⟼ y."
   (interactive)
-  (insert "↦")
+  (insert "⟼")
   )
 					; (describe-function 'maps-to)
 
@@ -386,6 +407,13 @@
   (insert "—")
   )
 ; (describe-function 'mdash)
+
+(defun MDASH ()
+  "Inserts an mdash. (Note: Option+Shift+hyphen = mdash (on Mac).)"
+  (interactive)
+  (insert "—")
+  )
+; (describe-function 'MDASH)
 
 (defun Mercury ()
   "Inserts a MERCURY character."
