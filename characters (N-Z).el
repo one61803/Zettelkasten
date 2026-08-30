@@ -76,11 +76,18 @@
 ; (describe-function 'NEW-LINE)
 
 (defun nona ()
-  "Inserts superscripted 9."
+  "Inserts a superscript nine."
   (interactive)
   (insert "⁹")
   )
 					; (describe-function 'nona)
+
+(defun nonu ()
+  "Inserts a subscript nine."
+  (interactive)
+  (insert "₉")
+  )
+; (describe-function 'nonu)
 
 (defun n0t ()
   "Inserts 'n apostrophe t'."
@@ -116,6 +123,13 @@
   (insert "⁰")
   )
 ; (describe-function 'nulla)
+
+(defun nullu ()
+  "Inserts subscripted 0."
+  (interactive)
+  (insert "₀")
+  )
+; (describe-function 'nullu)
 
 (defun o-acute-acute ()
   "Inserts Hungarian long o-umlaut. (Synonyms: o-double-acute, o11.)"
@@ -157,7 +171,7 @@
 ; (describe-function 'o11)
   
 (defun octa ()
-  "Inserts superscripted eight."
+  "Inserts a superscript eight."
   (interactive)
   (insert "⁸")
   )
@@ -169,6 +183,13 @@
   (insert "𝕆")
   )
 ; (describe-function 'octonions)
+
+(defun octu ()
+  "Inserts a subscript eight."
+  (interactive)
+  (insert "₈")
+  )
+; (describe-function 'octu)
 
 (defun o-macron ()
   "Inserts o with macron on top. Useful for, e.g., Latin (and also Māori and Hawaiian)."
@@ -287,7 +308,7 @@
 ; (describe-function 'partial)
 
 (defun penta ()
-  "Inserts a superscripted 5."
+  "Inserts a superscript 5."
   (interactive)
   (insert "⁵")
   )
@@ -298,6 +319,13 @@
   (interactive)
   (insert "⬠"))
 ; (describe-function 'pentagon)
+
+(defun pentu ()
+  "Inserts a subscript 5."
+  (interactive)
+  (insert "₅")
+  )
+; (describe-function 'pentu)
 
 (defun pilcrow ()
   "Inserts a PILCROW SIGN."
@@ -844,11 +872,18 @@
   (insert "⊗"))
 
 (defun tetra ()
-  "Inserts superscripted 4."
+  "Inserts a superscript 4."
   (interactive)
   (insert "⁴")
   )
-; (describe-function 'tetra)
+					; (describe-function 'tetra)
+
+(defun tetru ()
+  "Inserts a subscript 4."
+  (interactive)
+  (insert "₄")
+  )
+; (describe-function 'tetru)
 
 (defun TH ()
   "For Icelandic: inserts capital letter for English-equivalent TH (unvoiced)."
@@ -918,11 +953,18 @@
 ; (describe-function 'transpose)
 
 (defun tria ()
-  "Inserts a superscripted 3."
+  "Inserts a superscript 3."
   (interactive)
   (insert "³")
   )
-; (describe-function 'tria)
+					; (describe-function 'tria)
+
+(defun triu ()
+  "Inserts a subscript 3."
+  (interactive)
+  (insert "₃")
+  )
+; (describe-function 'triu)
 
 (defun tt ()
   "Inserts apostrophe t."

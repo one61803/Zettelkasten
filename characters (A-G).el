@@ -510,11 +510,18 @@
 ; (describe-function 'down-arrow)
 
 (defun dua ()
-  "Inserts a superscripted two."
+  "Inserts a superscript two."
   (interactive)
   (insert "²")
   )
-; (describe-function 'dua)
+					; (describe-function 'dua)
+
+(defun duu ()
+  "Inserts a subscript two."
+  (interactive)
+  (insert "₂")
+  )
+; (describe-function 'duu)
 
 (defun e-macron ()
   "Inserts e with macron on top."

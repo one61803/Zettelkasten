@@ -21,18 +21,32 @@
 ; (describe-function 'helm-symbol)
 
 (defun hepta ()
-  "Inserts superscript 7."
+  "Inserts a superscript 7."
   (interactive)
   (insert "⁷")
   )
-; (describe-function 'hepta)
+					; (describe-function 'hepta)
+
+(defun heptu ()
+  "Inserts a subscript 7."
+  (interactive)
+  (insert "₇")
+  )
+; (describe-function 'heptu)
 
 (defun hexa ()
-  "Inserts superscript 6."
+  "Inserts a superscript 6."
   (interactive)
   (insert "⁶")
   )
 					; (describe-function 'hexa)
+
+(defun hexu ()
+  "Inserts a subscript 6."
+  (interactive)
+  (insert "₆")
+  )
+; (describe-function 'hexu)
 
 (defun I-circumflex ()
   "For Romanian: inserts uppercase 'i cu circumflex'."
@@ -548,11 +562,18 @@
 ; (describe-function 'mm)
 
 (defun mona ()
-  "Inserts uppercase 1."
+  "Inserts superscript 1."
   (interactive)
   (insert "¹")
   )
 ; (describe-function 'mona)
+
+(defun monu ()
+  "Inserts subscript 1."
+  (interactive)
+  (insert "₁")
+  )
+; (describe-function 'monu)
 
 (defun multiply ()
   "Inserts MULTIPLICATION SIGN."
