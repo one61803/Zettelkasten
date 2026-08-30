@@ -86,6 +86,106 @@
   )
 ; (describe-function "ii")
 
+(defun ideal-a ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL A letter."
+  (interactive)
+  (insert "𝔞")
+  )
+					; (describe-function 'ideal-a)
+
+(defun ideal-b ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL B letter."
+  (interactive)
+  (insert "𝔟")
+  )
+; (describe-function 'ideal-b)
+
+(defun ideal-c ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL C letter."
+  (interactive)
+  (insert "𝔠")
+  )
+; (describe-function 'ideal-c)
+
+(defun ideal-m ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL M letter."
+  (interactive)
+  (insert "𝔪")
+  )
+					; (describe-function 'ideal-m)
+
+(defun ideal-n ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL N letter."
+  (interactive)
+  (insert "𝔫")
+  )
+; (describe-function 'ideal-n)
+
+(defun ideal-p ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL P letter."
+  (interactive)
+  (insert "𝔭")
+  )
+					; (describe-function 'ideal-p)
+
+(defun ideal-q ()
+  "Inserts a MATHEMATICAL FRAKTUR SMALL Q letter."
+  (interactive)
+  (insert "𝔮")
+  )
+; (describe-function 'ideal-q)
+
+(defun ideal-A ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL A letter."
+  (interactive)
+  (insert "𝔄")
+  )
+; (describe-function 'ideal-A)
+
+(defun ideal-B ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL B letter."
+  (interactive)
+  (insert "𝔅")
+  )
+; (describe-function 'ideal-B)
+
+(defun ideal-C ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL C letter."
+  (interactive)
+  (insert "ℭ")
+  )
+; (describe-function 'ideal-C)
+
+(defun ideal-M ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL M letter."
+  (interactive)
+  (insert "𝔐")
+  )
+					; (describe-function 'ideal-M)
+
+(defun ideal-N ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL N letter."
+  (interactive)
+  (insert "𝔑")
+  )
+; (describe-function 'ideal-N)
+
+(defun ideal-P ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL P letter."
+  (interactive)
+  (insert "𝔓")
+  )
+					; (describe-function 'ideal-P)
+
+(defun ideal-Q ()
+  "Inserts a MATHEMATICAL FRAKTUR CAPITAL Q letter."
+  (interactive)
+  (insert "𝔔")
+  )
+; (describe-function 'ideal-Q)
+
+
+
 (defun identical-to ()
   "Inserts mathematical equivalence symbol. When two sides of an equation are equivalent to each other, i.e., equal for any value of their variable(s), then this symbol is applicable."
   (interactive)
