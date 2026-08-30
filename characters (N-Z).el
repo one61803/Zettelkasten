@@ -531,6 +531,13 @@
   (insert "ɑ"))
 ; (describe-function 'script-a)
 
+(defun script-F ()
+  "Inserts a SCRIPT CAPITAL F letter."
+  (interactive)
+  (insert "ℱ")
+  )
+					; (describe-function 'script-F)
+
 (defun seconds ()
   "Inserts a '”' character, used to denote the word “seconds”."
   (interactive)
