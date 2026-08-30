@@ -163,6 +163,13 @@
   )
 ; (describe-function 'octa)
 
+(defun octonions ()
+  "Inserts a MATHEMATICAL DOUBLE-STRUCK CAPITAL O letter."
+  (interactive)
+  (insert "𝕆")
+  )
+; (describe-function 'octonions)
+
 (defun o-macron ()
   "Inserts o with macron on top. Useful for, e.g., Latin (and also Māori and Hawaiian)."
   (interactive)

@@ -118,6 +118,13 @@
 					; (describe-function 'aesh)
 ; Note: There is already a function called “ash”, said to be part of “C source code”: (describe-function 'ash)
 
+(defun affine-space ()
+  "Inserts a MATHEMATICAL DOUBLE-STRUCK CAPITAL A letter."
+  (interactive)
+  (insert "𝔸")
+  )
+; (describe-function 'affine-space)
+
 (defun almost-equal-to ()
   "For mathematics: inserts the symbol for ALMOST EQUAL TO or 'approximately equal to'."
   (interactive)
@@ -647,6 +654,13 @@
   (interactive)
   (insert "’"))
 					; (describe-function 'feet)
+
+(defun field ()
+  "Inserts MATHEMATICAL DOUBLE-STRUCK CAPITAL F letter."
+  (interactive)
+  (insert "𝔽")
+  )
+; (describe-function 'field)
 
 (defun floor-function ()
   "Inserts pair of lower-corner square brackets."
