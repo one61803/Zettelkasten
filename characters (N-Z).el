@@ -118,14 +118,14 @@
 ; (describe-function 'not-in)
 
 (defun nulla ()
-  "Inserts superscripted 0."
+  "Inserts a superscript zero."
   (interactive)
   (insert "⁰")
   )
 ; (describe-function 'nulla)
 
 (defun nullu ()
-  "Inserts subscripted 0."
+  "Inserts a subscript zero."
   (interactive)
   (insert "₀")
   )
