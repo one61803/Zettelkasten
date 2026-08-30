@@ -232,8 +232,15 @@
   (interactive)
   (insert "”")
   )
-; (describe-function 'inches)
-  
+					; (describe-function 'inches)
+
+(defun inclusion ()
+  "Inserts a RIGHTWARD ARROW WITH HOOK character."
+  (interactive)
+  (insert "↪")
+  )
+; (describe-function 'inclusion)
+
 (defun index ()
   "Insert character of hand pointing its index finger towards the right."
   (interactive)
@@ -332,6 +339,90 @@
   (insert "≅")
   )
 ; (describe-function 'isomorphic-to)
+
+(defun it-A ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL A letter."
+  (interactive)
+  (insert "𝐴")
+  )
+					; (describe-function 'it-A)
+
+(defun it-a ()
+  "Inserts a MATHEMATICAL ITALIC SMALL A letter."
+  (interactive)
+  (insert "𝑎")
+  )
+; (describe-function 'it-a)
+
+(defun it-B ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL B letter."
+  (interactive)
+  (insert "𝐵")
+  )
+; (describe-function 'it-B)
+
+(defun it-b ()
+  "Inserts a MATHEMATICAL ITALIC SMALL B letter."
+  (interactive)
+  (insert "𝑏")
+  )
+; (describe-function 'it-b)
+
+(defun it-C ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL C letter."
+  (interactive)
+  (insert "𝐶")
+  )
+; (describe-function 'it-C)
+
+(defun it-i ()
+  "Inserts a MATHEMATICAL ITALIC SMALL I letter."
+  (interactive)
+  (insert "𝑖")
+  )
+					; (describe-function 'it-i)
+
+(defun it-M ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL M letter."
+  (interactive)
+  (insert "𝑀")
+  )
+					; (describe-function 'it-M)
+
+(defun it-m ()
+  "Inserts a MATHEMATICAL ITALIC SMALL M letter"
+  (interactive)
+  (insert "𝑚")
+  )
+; (describe-function 'it-m)
+
+(defun it-n ()
+  "Inserts a MATHEMATICAL ITALIC SMALL N letter."
+  (interactive)
+  (insert "𝑛")
+  )
+					; (describe-function 'it-n)
+
+(defun it-phi ()
+  "Inserts a MATHEMATICAL ITALIC SMALL PHI Greek letter."
+  (interactive)
+  (insert "𝜑")
+  )
+					; (describe-function 'phi)
+
+(defun it-X ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL X letter."
+  (interactive)
+  (insert "𝑋")
+  )
+; (describe-function 'it-X)
+
+(defun it-x ()
+  "Inserts a MATHEMATICAL ITALIC SMALL X letter."
+  (interactive)
+  (insert "𝑥")
+  )
+; (describe-function 'it-x)
 
 (defun Jupiter ()
   "Inserts a JUPITER character."
