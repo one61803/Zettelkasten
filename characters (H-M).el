@@ -373,7 +373,21 @@
   (interactive)
   (insert "𝐶")
   )
-; (describe-function 'it-C)
+					; (describe-function 'it-C)
+
+(defun it-c ()
+  "Inserts a MATHEMATICAL ITALIC SMALL C letter."
+  (interactive)
+  (insert "𝑐")
+  )
+; (describe-function 'it-c)
+
+(defun it-f ()
+  "Inserts a MATHEMATICAL ITALIC SMALL F letter."
+  (interactive)
+  (insert "𝑓")
+  )
+					; (describe-function 'it-f)
 
 (defun it-i ()
   "Inserts a MATHEMATICAL ITALIC SMALL I letter."
@@ -381,6 +395,20 @@
   (insert "𝑖")
   )
 					; (describe-function 'it-i)
+
+(defun it-k ()
+  "Inserts a MATHEMATICAL ITALIC SMALL K letter."
+  (interactive)
+  (insert "𝑘")
+  )
+; (describe-function 'it-k)
+
+(defun it-l ()
+  "Inserts a MATHEMATICAL ITALIC SMALL L letter."
+  (interactive)
+  (insert "𝑙")
+  )
+; (describe-function 'it-l)
 
 (defun it-M ()
   "Inserts a MATHEMATICAL ITALIC CAPITAL M letter."
