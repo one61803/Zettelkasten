@@ -153,14 +153,14 @@
 ; (describe-function 'approximately-equal-to)
 
 (defun bd-B ()
-  "Inserts a MATHEMATICAL BOLD CAPITAL E letter."
+  "Inserts a MATHEMATICAL BOLD CAPITAL B letter."
   (interactive)
   (insert "𝐁")
   )
 ; (describe-function 'bd-B)
 
 (defun bd-E ()
-  "Inserts a MATHEMATICAL BOLD CAPITAL D letter."
+  "Inserts a MATHEMATICAL BOLD CAPITAL E letter."
   (interactive)
   (insert "𝐄")
   )
