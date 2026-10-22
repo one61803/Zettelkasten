@@ -348,6 +348,13 @@
   )
 ; (describe-function 'place-of-interest-sign)
 
+(defun ploe ()
+  "Inserts a CIRCLED PLUS character (for representing tensor sum)."
+  (interactive)
+  (insert "⊕")
+  )
+; (describe-function 'ploe)
+  
 (defun Pluto ()
   "Inserts a PLUTO character."
   (interactive)
@@ -559,12 +566,19 @@
   (insert "ɑ"))
 ; (describe-function 'script-a)
 
-(defun script-F ()
+(defun sc-F ()
   "Inserts a SCRIPT CAPITAL F letter."
   (interactive)
   (insert "ℱ")
   )
 					; (describe-function 'script-F)
+
+(defun sc-L ()
+  "Inserts a SCRIPT CAPITAL L letter."
+  (interactive)
+  (insert "ℒ")
+  )
+; (describe-function 'sc-L)
 
 (defun seconds ()
   "Inserts a '”' character, used to denote the word “seconds”."
@@ -669,6 +683,13 @@
   (insert "’S")
   )
 ; (describe-function 'SS)
+
+(defun stone ()
+  "Inserts CIRCLED TIMES (representing the tensor product)."
+  (interactive)
+  (insert "⊗")
+  )
+; (describe-function 'stone)
 
 (defun sub-0 ()
   "Insert subscripted 0."
@@ -926,6 +947,13 @@
   (insert "×"))
 ;(describe-function 'times)
 
+(defun to ()
+  "Inserts a long right arrow character."
+  (interactive)
+  (insert "⟶")
+  )
+; (describe-function 'to)
+
 (defun tombstone ()
   "Inserts a tombstone character, which is ≡ Q.E.D."
   (interactive)
@@ -1052,8 +1080,16 @@
   )
 ; (describe-function "uu")
 
+(defun Vektor ()
+  "Inserts a NORTH EAST ARROW."
+  (interactive)
+  (insert "↗")
+  )
+; (describe-function 'Vektor)
+
+
 (defun Venus ()
-  "Inserts a FEMALE SIGN (synonym: female-sign)."
+  "Inserts a FEMALE SIGN."
   (interactive)
   (insert "♀"))
 ; (describe-function 'Venus)
@@ -1081,7 +1117,14 @@
   "Inserts WHITE BULLET. (Black bullets could be used for closed (terminal) nodes of an outline (dendritic list). White bullets could be used for open (non-terminal) nodes of such an outline.)"
   (interactive)
   (insert "◦"))
-; (describe-function 'white-bullet)
+                                        ; (describe-function 'white-bullet)
+
+(defun white-heart ()
+  "Inserts WHITE HEART SUIT character."
+  (interactive)
+  (insert "♡")
+  )
+                                        ; (describe-function 'white-heart)
 
 (defun white-star ()
   "Inserts special character WHITE STAR."

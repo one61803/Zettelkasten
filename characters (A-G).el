@@ -152,6 +152,48 @@
   )
 ; (describe-function 'approximately-equal-to)
 
+(defun bd-B ()
+  "Inserts a MATHEMATICAL BOLD CAPITAL E letter."
+  (interactive)
+  (insert "𝐁")
+  )
+; (describe-function 'bd-B)
+
+(defun bd-E ()
+  "Inserts a MATHEMATICAL BOLD CAPITAL D letter."
+  (interactive)
+  (insert "𝐄")
+  )
+                                        ; (describe-function 'bd-E)
+
+(defun bd-J ()
+  "Inserts a MATHEMATICAL BOLD CAPITAL J letter."
+  (interactive)
+  (insert "𝐉")
+  )
+; (describe-function 'bd-J)
+
+(defun bdit-a ()
+  "Inserts a MATHEMATICAL BOLD ITALIC SMALL A."
+  (interactive)
+  (insert "𝒂")
+  )
+                                        ; (describe-function 'vc-a)
+
+(defun bdit-b ()
+  "Inserts a MATHEMATICAL BOLD ITALIC SMALL B."
+  (interactive)
+  (insert "𝒃")
+  )
+                                        ; (describe-function 'vc-b)
+
+(defun bdit-c ()
+  "Inserts a MATHEMATICAL BOLD ITALIC SMALL C."
+  (interactive)
+  (insert "𝒄")
+  )
+                                        ; (describe-function 'vc-c)
+
 (defun because ()
   "Inserts BECAUSE character."
   (interactive)

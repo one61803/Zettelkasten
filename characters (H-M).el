@@ -380,7 +380,35 @@
   (interactive)
   (insert "𝑐")
   )
-; (describe-function 'it-c)
+                                        ; (describe-function 'it-c)
+
+(defun it-d ()
+  "Inserts a MATHEMATICAL ITALIC SMALL D letter."
+  (interactive)
+  (insert "𝑑")
+  )
+; (describe-function 'it-d)
+
+(defun it-E ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL E letter."
+  (interactive)
+  (insert "𝐸")
+  )
+; (describe-function 'it-E)
+
+(defun it-e ()
+  "Inserts a MATHEMATICAL ITALIC SMALL E letter."
+  (interactive)
+  (insert "𝑒")
+  )
+; (describe-function 'it-e)
+
+(defun it-F ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL F letter."
+  (interactive)
+  (insert "𝐹")
+  )
+; (describe-function 'it-F)
 
 (defun it-f ()
   "Inserts a MATHEMATICAL ITALIC SMALL F letter."
@@ -389,12 +417,47 @@
   )
 					; (describe-function 'it-f)
 
+(defun it-g ()
+  "Inserts a MATHEMATICAL ITALIC SMALL G letter."
+  (interactive)
+  (insert "𝑔")
+  )
+; (describe-function 'it-g)
+
+(defun it-gamma ()
+  "Inserts a MATHEMATICAL ITALIC SMALL GAMMA Greek letter."
+  (interactive)
+  (insert "𝛾")
+  )
+; (describe-function 'it-gamma)
+
 (defun it-i ()
   "Inserts a MATHEMATICAL ITALIC SMALL I letter."
   (interactive)
   (insert "𝑖")
   )
 					; (describe-function 'it-i)
+
+(defun it-h ()
+  "Inserts a MATHEMATICAL ITALIC SMALL H letter."
+  (interactive)
+  (insert "ℎ")
+  )
+                                        ; (describe-function 'it-h)
+
+(defun it-i ()
+  "Inserts a MATHEMATICAL ITALIC SMALL I letter."
+  (interactive)
+  (insert "𝑖")
+  )
+                                        ; (describe-function 'it-i)
+
+(defun it-j ()
+  "Inserts a MATHEMATICAL ITALIC SMALL J letter."
+  (interactive)
+  (insert "𝑗")
+  )
+; (describe-function 'it-j)
 
 (defun it-k ()
   "Inserts a MATHEMATICAL ITALIC SMALL K letter."
@@ -410,6 +473,13 @@
   )
 ; (describe-function 'it-l)
 
+(defun it-lambda ()
+  "Inserts a MATHEMATICAL ITALIC SMALL LAMBDA Greek letter."
+  (interactive)
+  (insert "𝜆")
+  )
+; (describe-function 'it-lambda)
+
 (defun it-M ()
   "Inserts a MATHEMATICAL ITALIC CAPITAL M letter."
   (interactive)
@@ -424,6 +494,13 @@
   )
 ; (describe-function 'it-m)
 
+(defun it-mu ()
+  "Inserts a MATHEMATICAL ITALIC SMALL MU Greek letter."
+  (interactive)
+  (insert "𝜇")
+  )
+; (describe-function 'it-mu)
+
 (defun it-n ()
   "Inserts a MATHEMATICAL ITALIC SMALL N letter."
   (interactive)
@@ -431,12 +508,117 @@
   )
 					; (describe-function 'it-n)
 
+(defun it-nu ()
+  "Inserts a MATHEMATICAL ITALIC SMALL NU Greek letter."
+  (interactive)
+  (insert "𝜈")
+  )
+; (describe-function 'it-nu)
+
+(defun it-P ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL P letter."
+  (interactive)
+  (insert "𝑃")
+  )
+; (describe-function 'it-P)
+
+(defun it-p ()
+  "Inserts a MATHEMATICAL ITALIC SMALL P letter."
+  (interactive)
+  (insert "𝑝")
+  )
+; (describe-function 'it-p)
+
 (defun it-phi ()
   "Inserts a MATHEMATICAL ITALIC SMALL PHI Greek letter."
   (interactive)
   (insert "𝜑")
   )
 					; (describe-function 'phi)
+
+(defun it-pi ()
+  "Inserts a MATHEMATICAL ITALIC SMALL PI Greek letter."
+  (interactive)
+  (insert "𝜋")
+  )
+; (describe-function 'it-pi)
+
+(defun it-psi ()
+  "Inserts a MATHEMATICAL ITALIC SMALL PSI Greek letter."
+  (interactive)
+  (insert "𝜓")
+  )
+; (describe-function 'it-psi)
+
+(defun it-Q ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL Q letter."
+  (interactive)
+  (insert "𝑄")
+  )
+; (describe-function 'it-Q)
+
+(defun it-q ()
+  "Inserts a MATHEMATICAL ITALIC SMALL Q letter."
+  (interactive)
+  (insert "𝑞")
+  )
+; (describe-function 'it-q)
+
+(defun it-rho ()
+  "Inserts a MATHEMATICAL ITALIC SMALL RHO Greek letter."
+  (interactive)
+  (insert "𝜌")
+  )
+; (describe-function 'it-rho)
+
+(defun it-S ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL S letter."
+  (interactive)
+  (insert "𝑆")
+  )
+; (describe-function 'it-S)
+
+(defun it-t ()
+  "Inserts a MATHEMATICAL ITALIC SMALL T letter."
+  (interactive)
+  (insert "𝑡")
+  )
+                                        ; (describe-function 'it-t)
+
+(defun it-tau ()
+  "Inserts a MATHEMATICAL ITALIC SMALL TAU Greek letter."
+  (interactive)
+  (insert "𝜏")
+  )
+; (describe-function 'it-tau)
+
+(defun it-U ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL U letter."
+  (interactive)
+  (insert "𝑈")
+  )
+                                        ; (describe-function 'it-U)
+
+(defun it-u ()
+  "Inserts a MATHEMATICAL ITALIC SMALL U letter."
+  (interactive)
+  (insert "𝑢")
+  )
+; (describe-function 'it-u)
+
+(defun it-V ()
+  "Inserts a MATHEMATICAL ITALIC CAPITAL V letter."
+  (interactive)
+  (insert "𝑉")
+  )
+                                        ; (describe-function 'it-V)
+
+(defun it-v ()
+  "Inserts a MATHEMATICAL ITALIC SMALL V letter."
+  (interactive)
+  (insert "𝑣")
+  )
+; (describe-function 'it-v)
 
 (defun it-X ()
   "Inserts a MATHEMATICAL ITALIC CAPITAL X letter."
@@ -450,7 +632,21 @@
   (interactive)
   (insert "𝑥")
   )
-; (describe-function 'it-x)
+                                        ; (describe-function 'it-x)
+
+(defun it-y ()
+  "Inserts a MATHEMATICAL ITALIC SMALL Y letter."
+  (interactive)
+  (insert "𝑦")
+  )
+; (describe-function 'it-y)
+
+(defun it-z ()
+  "Inserts a MATHEMATICAL ITALIC SMALL Z letter."
+  (interactive)
+  (insert "𝑧")
+  )
+; (describe-function 'it-z)
 
 (defun Jupiter ()
   "Inserts a JUPITER character."
