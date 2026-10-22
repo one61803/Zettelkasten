@@ -178,21 +178,21 @@
   (interactive)
   (insert "𝒂")
   )
-                                        ; (describe-function 'vc-a)
+                                        ; (describe-function 'bdit-a)
 
 (defun bdit-b ()
   "Inserts a MATHEMATICAL BOLD ITALIC SMALL B."
   (interactive)
   (insert "𝒃")
   )
-                                        ; (describe-function 'vc-b)
+                                        ; (describe-function 'bdit-b)
 
 (defun bdit-c ()
   "Inserts a MATHEMATICAL BOLD ITALIC SMALL C."
   (interactive)
   (insert "𝒄")
   )
-                                        ; (describe-function 'vc-c)
+                                        ; (describe-function 'bdit-c)
 
 (defun because ()
   "Inserts BECAUSE character."
